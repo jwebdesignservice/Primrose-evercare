@@ -415,6 +415,32 @@ export default function ContactForm() {
             )}
           </motion.div>
         </div>
+
+        {/* Google Map */}
+        <motion.div
+          className="mt-14"
+          initial={{ opacity: 0, y: 24 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+        >
+          <div className="text-center mb-6">
+            <h2 className="font-heading text-3xl font-semibold text-[#1E293B] mb-2">Our Service Area</h2>
+            <p className="text-[#1E293B]/55 text-base">We cover Rochester, Chatham, Gillingham, Strood and Rainham</p>
+          </div>
+          <div className="rounded-2xl overflow-hidden shadow-md border border-[#E8A4A0]/15 w-full h-[420px]">
+            <iframe
+              title="Primrose Ever Care Service Area — Medway"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d79704.92!2d0.5029!3d51.3890!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8d8e0c5d5c7a5%3A0x4e0a5b7c8d9e0f1a!2sMedway%2C%20UK!5e0!3m2!1sen!2suk!4v1710000000000!5m2!1sen!2suk"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
+          </div>
+        </motion.div>
+
       </div>
     </section>
   );
