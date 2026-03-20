@@ -401,5 +401,5 @@ function Field({ label, required, children }: { label: string; required?: boolea
   );
 }
 
-const inputClass = 'w-full px-4 py-3 rounded-xl border border-gray-200 bg-white text-[#1E293B] text-sm placeholder:text-[#1E293B]/35 focus:outline-none focus:ring-2 focus:ring-[#E8A4A0]/50 focus:border-[#E8A4A0] transition-all duration-200';
-const selectClass = 'w-full px-4 py-3 rounded-xl border border-gray-200 bg-white text-[#1E293B] text-sm focus:outline-none focus:ring-2 focus:ring-[#E8A4A0]/50 focus:border-[#E8A4A0] transition-all duration-200 cursor-pointer';
+const inputClass = 'w-full px-4 py-3 rounded-xl border border-gray-200 bg-white text-[#1E293B] text-sm placeholder:text-[#1E293B]/35 focus:outline-none focus:ring-2 focus:ring-[#E8A4A0]/50 focus:border-[#E8A4A0] transition-all duration-200 h-[50px]';
+const selectClass = 'w-full px-4 py-3 rounded-xl border border-gray-200 bg-white text-[#1E293B] text-sm focus:outline-none focus:ring-2 focus:ring-[#E8A4A0]/50 focus:border-[#E8A4A0] transition-all duration-200 cursor-pointer h-[50px] appearance-none';
