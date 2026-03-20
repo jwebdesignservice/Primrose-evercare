@@ -101,13 +101,12 @@ export default function WhyChooseUs() {
             {/* Pink soft bg blob */}
             <div className="absolute inset-0 rounded-3xl bg-[#E8A4A0]/10 blur-2xl scale-105" />
 
-            <div className="relative w-full max-w-lg rounded-3xl overflow-hidden shadow-xl border border-[#E8A4A0]/20">
+            <div className="relative w-full max-w-lg aspect-square rounded-3xl overflow-hidden shadow-xl border border-[#E8A4A0]/20">
               <Image
                 src="/images/care.jpg"
                 alt="Caring for loved ones at home"
-                width={600}
-                height={450}
-                className="object-cover w-full h-auto"
+                fill
+                className="object-cover"
               />
               {/* Subtle overlay gradient */}
               <div className="absolute inset-0 bg-gradient-to-t from-[#1E293B]/10 to-transparent" />
