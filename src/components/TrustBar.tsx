@@ -28,8 +28,22 @@ const trustItems = [
 
 export default function TrustBar() {
   return (
-    <section className="bg-[#5B8FB9] pt-20 pb-10 relative z-10">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="bg-[#5B8FB9] relative z-10">
+      {/* Wave at top of TrustBar — flows from white Hero into blue */}
+      <div className="w-full leading-none -mt-px">
+        <svg
+          viewBox="0 0 1440 72"
+          className="w-full block"
+          preserveAspectRatio="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0,0 L0,36 C200,72 400,8 720,36 C1040,64 1240,10 1440,36 L1440,0 Z"
+            fill="white"
+          />
+        </svg>
+      </div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-4">
           {trustItems.map((item, i) => {
             const Icon = item.icon;
