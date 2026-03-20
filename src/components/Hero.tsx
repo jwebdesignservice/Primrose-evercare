@@ -216,6 +216,20 @@ export default function Hero() {
       </div>
 
 
+      {/* Curved SVG Divider */}
+      <div className="absolute bottom-0 left-0 right-0 leading-none pointer-events-none">
+        <svg
+          viewBox="0 0 1440 72"
+          className="w-full block"
+          preserveAspectRatio="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0,72 L0,36 C200,72 400,8 720,36 C1040,64 1240,10 1440,36 L1440,72 Z"
+            fill="#5B8FB9"
+          />
+        </svg>
+      </div>
     </section>
   );
 }
