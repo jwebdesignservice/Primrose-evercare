@@ -60,7 +60,7 @@ export default function Hero() {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center pt-8 pb-16 lg:pt-10 lg:pb-24">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-8 items-center pt-8 pb-16 lg:pt-10 lg:pb-24">
           {/* ── Left: Content ── */}
           <div>
             <motion.div
@@ -76,7 +76,7 @@ export default function Hero() {
             </motion.div>
 
             <motion.h1
-              className="font-heading text-5xl lg:text-[3.6rem] xl:text-[4.2rem] font-bold text-[#1E293B] leading-[1.1] mb-6"
+              className="font-heading text-3xl sm:text-4xl lg:text-[3.6rem] xl:text-[4.2rem] font-bold text-[#1E293B] leading-[1.1] mb-6"
               initial="hidden"
               animate="visible"
               variants={fadeUp}
@@ -179,7 +179,7 @@ export default function Hero() {
 
               {/* Floating badge: DBS Checked */}
               <motion.div
-                className="absolute top-6 -left-4 bg-white rounded-2xl shadow-lg px-4 py-2.5 flex items-center gap-2.5"
+                className="absolute top-6 -left-2 sm:-left-4 bg-white rounded-2xl shadow-lg px-3 py-2 sm:px-4 sm:py-2.5 flex items-center gap-2 sm:gap-2.5"
                 animate={{ y: [0, -8, 0] }}
                 transition={{ duration: 3.5, repeat: Infinity, ease: "easeInOut" }}
               >

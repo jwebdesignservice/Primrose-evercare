@@ -18,6 +18,7 @@ body {
   font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 .font-heading {
@@ -26,4 +27,5 @@ body {
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
