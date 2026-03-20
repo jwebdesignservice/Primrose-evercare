@@ -278,7 +278,7 @@ export default function ContactForm() {
                             <option>Dementia Care</option>
                             <option>Companionship Visits</option>
                             <option>Medication Support</option>
-                            <option>Live-in Care</option>
+
                             <option>Multiple services — please discuss</option>
                             <option>Not sure — need guidance</option>
                           </select>
@@ -292,7 +292,7 @@ export default function ContactForm() {
                               <option>Twice a day</option>
                               <option>Three or more times a day</option>
                               <option>A few times a week</option>
-                              <option>Live-in / 24-hour care</option>
+
                               <option>Flexible — not yet sure</option>
                             </select>
                           </Field>

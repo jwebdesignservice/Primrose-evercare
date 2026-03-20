@@ -15,7 +15,6 @@ const serviceLinks = [
   'Dementia Care',
   'Companionship',
   'Medication Support',
-  'Live-in Care',
 ];
 
 const bottomLinks = [

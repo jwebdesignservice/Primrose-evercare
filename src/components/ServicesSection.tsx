@@ -1,7 +1,7 @@
 'use client';
 
 import { motion, Variants } from 'framer-motion';
-import { Heart, Brain, Users, Pill, Home } from 'lucide-react';
+import { Heart, Brain, Users, Pill } from 'lucide-react';
 import { LucideIcon } from 'lucide-react';
 
 const services: { icon: LucideIcon; title: string; description: string; color: string; bg: string; border: string }[] = [
@@ -37,14 +37,7 @@ const services: { icon: LucideIcon; title: string; description: string; color: s
     bg: 'bg-[#F3EEF8]',
     border: 'hover:border-t-[#9B7EC8]',
   },
-  {
-    icon: Home,
-    title: 'Live-in Care',
-    description: "Round-the-clock support from a dedicated carer living in your loved one's home.",
-    color: 'text-[#C87E4A]',
-    bg: 'bg-[#FBF2EA]',
-    border: 'hover:border-t-[#C87E4A]',
-  },
+
 ];
 
 const containerVariants: Variants = {
@@ -58,8 +51,8 @@ const cardVariants: Variants = {
 };
 
 export default function ServicesSection() {
-  const topRow = services.slice(0, 3);
-  const bottomRow = services.slice(3);
+  const topRow = services.slice(0, 2);
+  const bottomRow = services.slice(2);
 
   return (
     <section className="relative py-24 overflow-hidden">
@@ -112,9 +105,9 @@ export default function ServicesSection() {
           </p>
         </motion.div>
 
-        {/* Row 1: 3 cards */}
+        {/* Row 1: 2 cards */}
         <motion.div
-          className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-6"
+          className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
@@ -127,7 +120,7 @@ export default function ServicesSection() {
 
         {/* Row 2: 2 cards centred */}
         <motion.div
-          className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-2xl mx-auto"
+          className="grid grid-cols-1 sm:grid-cols-2 gap-6"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
