@@ -4,13 +4,14 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const navLinks = [
-  { href: "#", label: "Home" },
-  { href: "#services", label: "Services" },
-  { href: "#about", label: "About" },
-  { href: "#areas", label: "Areas We Cover" },
-  { href: "#contact", label: "Contact" },
+  { href: "/", label: "Home" },
+  { href: "/#services", label: "Services" },
+  { href: "/#about", label: "About" },
+  { href: "/#areas", label: "Areas We Cover" },
+  { href: "/contact", label: "Contact" },
 ];
 
 export default function Navbar() {
@@ -34,7 +35,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-3">
+          <Link href="/" className="flex items-center gap-3">
             <Image
               src="/logo.png"
               alt="Primrose Ever Care Logo"
@@ -51,29 +52,29 @@ export default function Navbar() {
                 Ever Care
               </span>
             </div>
-          </a>
+          </Link>
 
           {/* Desktop Nav Links */}
           <div className="hidden md:flex items-center gap-7">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.href}
                 href={link.href}
                 className="text-sm font-medium text-[#1E293B] hover:text-[#4A7FA5] transition-colors duration-200"
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
           </div>
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <a
-              href="#contact"
+            <Link
+              href="/contact"
               className="inline-flex items-center px-6 py-2.5 rounded-full text-sm font-semibold text-white bg-gradient-to-r from-[#E8A4A0] to-[#D4887F] shadow-sm hover:shadow-[0_0_22px_rgba(232,164,160,0.55)] transition-all duration-300 hover:-translate-y-0.5"
             >
               Book Free Assessment
-            </a>
+            </Link>
           </div>
 
           {/* Mobile Hamburger */}
@@ -100,22 +101,22 @@ export default function Navbar() {
           >
             <div className="px-5 py-5 flex flex-col gap-1">
               {navLinks.map((link) => (
-                <a
+                <Link
                   key={link.href}
                   href={link.href}
                   className="py-2.5 px-2 text-sm font-medium text-[#1E293B] hover:text-[#4A7FA5] transition-colors rounded-lg"
                   onClick={() => setIsOpen(false)}
                 >
                   {link.label}
-                </a>
+                </Link>
               ))}
-              <a
-                href="#contact"
+              <Link
+                href="/contact"
                 className="mt-3 inline-flex items-center justify-center px-6 py-3 rounded-full text-sm font-semibold text-white bg-gradient-to-r from-[#E8A4A0] to-[#D4887F]"
                 onClick={() => setIsOpen(false)}
               >
                 Book Free Assessment
-              </a>
+              </Link>
             </div>
           </motion.div>
         )}
