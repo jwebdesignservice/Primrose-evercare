@@ -4,9 +4,9 @@ import { Phone, Mail, MapPin } from 'lucide-react';
 
 const quickLinks = [
   { label: 'Home', href: '/' },
-  { label: 'Services', href: '/services' },
-  { label: 'About', href: '/about' },
-  { label: 'Areas We Cover', href: '/areas' },
+  { label: 'Services', href: '/#services' },
+  { label: 'About', href: '/#about' },
+  { label: 'Areas We Cover', href: '/#areas' },
   { label: 'Contact', href: '/contact' },
 ];
 
@@ -19,10 +19,10 @@ const serviceLinks = [
 ];
 
 const bottomLinks = [
-  { label: 'Complaints Procedure', href: '/complaints' },
-  { label: 'Privacy Policy', href: '/privacy' },
-  { label: 'Cookies Policy', href: '/cookies' },
-  { label: 'Safeguarding Policy', href: '/safeguarding' },
+  { label: 'Complaints Procedure', href: '/contact' },
+  { label: 'Privacy Policy', href: '/contact' },
+  { label: 'Cookies Policy', href: '/contact' },
+  { label: 'Safeguarding Policy', href: '/contact' },
 ];
 
 export default function Footer() {
@@ -41,7 +41,7 @@ export default function Footer() {
                 alt="Primrose Ever Care Logo"
                 width={52}
                 height={52}
-                className="object-contain brightness-0 invert opacity-90"
+                className="object-contain"
               />
               <div className="flex flex-col leading-none">
                 <span className="font-heading text-xl font-bold text-white tracking-wide leading-none">
