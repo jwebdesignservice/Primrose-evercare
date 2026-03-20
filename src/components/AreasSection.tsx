@@ -39,7 +39,7 @@ export default function AreasSection() {
 
         {/* Pills */}
         <motion.div
-          className="flex flex-wrap justify-center gap-4"
+          className="flex flex-wrap justify-center gap-4 mb-14"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
@@ -62,6 +62,26 @@ export default function AreasSection() {
               {area}
             </motion.div>
           ))}
+        </motion.div>
+
+        {/* Google Map */}
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="rounded-2xl overflow-hidden shadow-md border border-[#E8A4A0]/20 w-full h-[420px]"
+        >
+          <iframe
+            title="Primrose Ever Care Service Area — Medway"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d79704.92!2d0.5029!3d51.3890!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8d8e0c5d5c7a5%3A0x4e0a5b7c8d9e0f1a!2sMedway%2C%20UK!5e0!3m2!1sen!2suk!4v1710000000000!5m2!1sen!2suk"
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
         </motion.div>
       </div>
     </section>
