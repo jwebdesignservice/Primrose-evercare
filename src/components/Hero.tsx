@@ -106,7 +106,7 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
             >
               <a
-                href="#contact"
+                href="/contact"
                 className="inline-flex items-center justify-center px-7 py-4 rounded-full text-white font-semibold text-sm bg-gradient-to-r from-[#4A7FA5] to-[#5B8FB9] shadow-md hover:shadow-[0_0_28px_rgba(74,127,165,0.45)] transition-all duration-300 hover:-translate-y-0.5"
               >
                 Book a Free Care Assessment
