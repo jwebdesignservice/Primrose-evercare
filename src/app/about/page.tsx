@@ -6,7 +6,7 @@ import AboutPage from '@/components/AboutPage';
 export const metadata: Metadata = {
   title: 'About Us | Primrose Ever Care',
   description:
-    'Learn about Primrose Ever Care — a Medway-based domiciliary care provider committed to compassionate, dignity-first home care in Rochester, Chatham, Gillingham, Strood and Rainham.',
+    'Learn about Primrose Ever Care — a family-founded domiciliary care provider serving North Kent. Meet our founder Aminah Carew and discover our values.',
 };
 
 export default function About() {
