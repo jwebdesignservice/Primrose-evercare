@@ -41,7 +41,7 @@ export default function CookiesPolicyPage() {
           initial="hidden"
           animate="visible"
           variants={fadeUp}
-          className="max-w-3xl mx-auto px-6 lg:px-8 prose prose-slate prose-lg max-w-none"
+          className="max-w-3xl mx-auto px-6 lg:px-8"
         >
           {/* Override prose styles with Tailwind */}
           <div className="space-y-10 text-[#1E293B]/70 text-base leading-relaxed">
