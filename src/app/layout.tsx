@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Inter } from "next/font/google";
 import "./globals.css";
+import CookieBanner from "@/components/CookieBanner";
 
 const cormorantGaramond = Cormorant_Garamond({
   variable: "--font-cormorant",
@@ -31,7 +32,10 @@ export default function RootLayout({
       lang="en"
       className={`${cormorantGaramond.variable} ${inter.variable}`}
     >
-      <body className="antialiased">{children}</body>
+      <body className="antialiased">
+        {children}
+        <CookieBanner />
+      </body>
     </html>
   );
 }

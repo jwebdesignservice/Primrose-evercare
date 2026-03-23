@@ -4,7 +4,7 @@ import { Phone, Mail, MapPin } from 'lucide-react';
 
 const quickLinks = [
   { label: 'Home', href: '/' },
-  { label: 'Services', href: '/#services' },
+  { label: 'Services', href: '/services' },
   { label: 'About', href: '/about' },
   { label: 'Areas We Cover', href: '/#areas' },
   { label: 'Contact', href: '/contact' },
@@ -18,10 +18,10 @@ const serviceLinks = [
 ];
 
 const bottomLinks = [
-  { label: 'Complaints Procedure', href: '/contact' },
-  { label: 'Privacy Policy', href: '/contact' },
-  { label: 'Cookies Policy', href: '/contact' },
-  { label: 'Safeguarding Policy', href: '/contact' },
+  { label: 'Complaints Procedure', href: '/complaints' },
+  { label: 'Privacy Policy', href: '/privacy-policy' },
+  { label: 'Cookies Policy', href: '/cookies-policy' },
+  { label: 'Safeguarding Policy', href: '/safeguarding' },
 ];
 
 export default function Footer() {
@@ -52,7 +52,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-white/55 text-sm leading-relaxed">
-              Trusted home care in Medway
+              Trusted home care across North Kent
             </p>
           </div>
 
@@ -117,7 +117,7 @@ export default function Footer() {
                 <div className="flex items-start gap-3">
                   <MapPin className="w-4 h-4 text-[#E8A4A0] flex-shrink-0 mt-0.5" strokeWidth={1.8} />
                   <span className="text-white/65 text-sm leading-relaxed">
-                    Rochester, Chatham, Gillingham,<br />Strood, Rainham
+                    Dartford, Gravesend, Medway,<br />Maidstone, Swale &amp; beyond
                   </span>
                 </div>
               </li>
