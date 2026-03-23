@@ -17,6 +17,9 @@ About page — next in queue.
 - Cookie consent banner — not built
 - Contract signed with client — project is live and paid
 
+## Flow Exception (2026-03-23)
+About page (`/about`) was built directly by George outside the Oracle → Paperclip flow. Output kept as a one-off exception. All remaining work must go through the correct flow: Oracle briefs → George creates Paperclip task → specialist agent builds.
+
 ## Off-Limits
 - Do not modify the homepage without operator approval — client has seen and approved it
 - Do not change the colour palette or typography without approval
