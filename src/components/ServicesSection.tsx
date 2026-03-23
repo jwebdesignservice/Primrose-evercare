@@ -1,7 +1,7 @@
 'use client';
 
 import { motion, Variants } from 'framer-motion';
-import { Heart, Brain, Users, Pill } from 'lucide-react';
+import { Heart, Brain, Users, Pill, UtensilsCrossed, Home, PersonStanding, RefreshCcw } from 'lucide-react';
 import { LucideIcon } from 'lucide-react';
 
 const services: { icon: LucideIcon; title: string; description: string; color: string; bg: string; border: string }[] = [
@@ -37,7 +37,38 @@ const services: { icon: LucideIcon; title: string; description: string; color: s
     bg: 'bg-[#F3EEF8]',
     border: 'hover:border-t-[#9B7EC8]',
   },
-
+  {
+    icon: UtensilsCrossed,
+    title: 'Meal Preparation',
+    description: 'Nutritious, home-cooked meals prepared to suit dietary needs and personal preferences.',
+    color: 'text-[#C0863A]',
+    bg: 'bg-[#FEF6EE]',
+    border: 'hover:border-t-[#C0863A]',
+  },
+  {
+    icon: Home,
+    title: 'Household Tasks',
+    description: 'Light cleaning, laundry and household chores to keep the home safe and comfortable.',
+    color: 'text-[#4A7FA5]',
+    bg: 'bg-[#EBF4FB]',
+    border: 'hover:border-t-[#4A7FA5]',
+  },
+  {
+    icon: PersonStanding,
+    title: 'Mobility Assistance',
+    description: 'Safe support with moving, transferring and getting around to maintain independence.',
+    color: 'text-[#7B9E7B]',
+    bg: 'bg-[#EEF5EE]',
+    border: 'hover:border-t-[#7B9E7B]',
+  },
+  {
+    icon: RefreshCcw,
+    title: 'Respite Care',
+    description: 'Giving family carers a well-earned break while their loved one receives consistent, quality care.',
+    color: 'text-[#D4887F]',
+    bg: 'bg-[#FEF3F2]',
+    border: 'hover:border-t-[#D4887F]',
+  },
 ];
 
 const containerVariants: Variants = {
@@ -51,9 +82,6 @@ const cardVariants: Variants = {
 };
 
 export default function ServicesSection() {
-  const topRow = services.slice(0, 2);
-  const bottomRow = services.slice(2);
-
   return (
     <section className="relative py-24 overflow-hidden">
       {/* Rich background */}
@@ -105,28 +133,15 @@ export default function ServicesSection() {
           </p>
         </motion.div>
 
-        {/* Row 1: 2 cards */}
+        {/* Service cards grid */}
         <motion.div
-          className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: '-60px' }}
         >
-          {topRow.map((service) => (
-            <ServiceCard key={service.title} service={service} />
-          ))}
-        </motion.div>
-
-        {/* Row 2: 2 cards centred */}
-        <motion.div
-          className="grid grid-cols-1 sm:grid-cols-2 gap-6"
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: '-40px' }}
-        >
-          {bottomRow.map((service) => (
+          {services.map((service) => (
             <ServiceCard key={service.title} service={service} />
           ))}
         </motion.div>

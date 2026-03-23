@@ -3,7 +3,19 @@
 import { motion, Variants } from 'framer-motion';
 import { MapPin } from 'lucide-react';
 
-const areas = ['Rochester', 'Chatham', 'Gillingham', 'Strood', 'Rainham'];
+const areas = [
+  { label: 'Dartford' },
+  { label: 'Gravesend' },
+  { label: 'Strood' },
+  { label: 'Rochester' },
+  { label: 'Chatham' },
+  { label: 'Gillingham' },
+  { label: 'Rainham' },
+  { label: 'Maidstone' },
+  { label: 'Sittingbourne' },
+  { label: 'Faversham' },
+  { label: 'Sheerness' },
+];
 
 const containerVariants: Variants = {
   hidden: {},
@@ -30,10 +42,10 @@ export default function AreasSection() {
           className="mb-12"
         >
           <h2 className="font-heading text-4xl md:text-5xl font-semibold text-[#1E293B] mb-4">
-            Serving Families Across Medway
+            Serving Families Across Kent
           </h2>
           <p className="text-[#1E293B]/65 text-lg max-w-xl mx-auto">
-            Based in Medway, we provide reliable home care across the local area
+            We provide reliable home care across North Kent, from Dartford to Swale
           </p>
         </motion.div>
 
@@ -47,7 +59,7 @@ export default function AreasSection() {
         >
           {areas.map((area) => (
             <motion.div
-              key={area}
+              key={area.label}
               variants={pillVariants}
               whileHover={{
                 scale: 1.05,
@@ -58,8 +70,8 @@ export default function AreasSection() {
                 rounded-full px-6 py-3 font-medium text-sm shadow-sm cursor-default
                 transition-colors duration-200"
             >
-              <MapPin className="w-4 h-4 text-[#D4887F]" strokeWidth={2} />
-              {area}
+              <MapPin className="w-4 h-4 text-[#D4887F] shrink-0" strokeWidth={2} />
+              {area.label}
             </motion.div>
           ))}
         </motion.div>
@@ -73,8 +85,8 @@ export default function AreasSection() {
           className="rounded-2xl overflow-hidden shadow-md border border-[#E8A4A0]/20 w-full h-[420px]"
         >
           <iframe
-            title="Primrose Ever Care Service Area — Medway"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d79704.92!2d0.5029!3d51.3890!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8d8e0c5d5c7a5%3A0x4e0a5b7c8d9e0f1a!2sMedway%2C%20UK!5e0!3m2!1sen!2suk!4v1710000000000!5m2!1sen!2suk"
+            title="Primrose Ever Care Service Area — North Kent"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d161000!2d0.5200!3d51.3700!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8d8c5e0b0a5a5%3A0x1a2b3c4d5e6f7g8h!2sNorth%20Kent%2C%20UK!5e0!3m2!1sen!2suk!4v1710000000001!5m2!1sen!2suk"
             width="100%"
             height="100%"
             style={{ border: 0 }}
