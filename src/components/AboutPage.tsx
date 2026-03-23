@@ -197,7 +197,7 @@ export default function AboutPage() {
       </section>
 
       {/* ── Stats bar ────────────────────────────────────── */}
-      <section className="py-16 bg-gradient-to-r from-[#E8A4A0] via-[#c08aa0] to-[#4A7FA5]">
+      <section className="py-20 bg-gradient-to-r from-[#E8A4A0] via-[#c08aa0] to-[#4A7FA5]">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -207,7 +207,7 @@ export default function AboutPage() {
         >
           {stats.map((stat) => (
             <motion.div key={stat.label} variants={fadeUp}>
-              <p className="font-heading text-4xl font-bold text-white mb-1">{stat.value}</p>
+              <p className="font-heading text-6xl md:text-7xl font-bold text-white mb-2">{stat.value}</p>
               <p className="text-white/75 text-sm">{stat.label}</p>
             </motion.div>
           ))}

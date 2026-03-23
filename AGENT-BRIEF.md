@@ -4,21 +4,27 @@
 Domiciliary home care website for Primrose Ever Care LTD (Aminah Carew). Serving Medway area (Rochester, Chatham, Gillingham, Strood, Rainham). Next.js + Tailwind + Vercel. Live at https://primrose-ever-care.vercel.app.
 
 ## Current Priority
-About page — next in queue.
+Areas We Cover page — next in queue.
 
 ## Context
-- Homepage ✅ Contact page ✅ Services page ✅ already live
-- AreasSection updated to North Kent (Dartford, Gravesend, Medway Towns, Maidstone, Swale)
+- Homepage ✅ Contact ✅ Services ✅ About ✅ Cookies Policy ✅ Cookie consent banner ✅ — all live on main
+- AreasSection (homepage section) updated to North Kent (Dartford, Gravesend, Medway Towns, Maidstone, Swale)
 - Services: 9 total (Personal Care, Dementia Care, Companionship, Medication Support, Meal Preparation, Household Tasks, Mobility Assistance, Respite Care, Live-in Care)
-- About page — NOT built yet
-- Areas We Cover (dedicated page) — NOT built yet
-- Legal pages (Privacy Policy, Cookies Policy, Complaints Procedure, Safeguarding Policy) — NOT built yet
+- Areas We Cover (dedicated page) — NOT built yet ← next task
+- Legal pages (Privacy Policy, Complaints Procedure, Safeguarding Policy) — NOT built yet
 - Contact form — exists but not wired to email
-- Cookie consent banner — not built
 - Contract signed with client — project is live and paid
 
 ## Flow Exception (2026-03-23)
 About page (`/about`) was built directly by George outside the Oracle → Paperclip flow. Output kept as a one-off exception. All remaining work must go through the correct flow: Oracle briefs → George creates Paperclip task → specialist agent builds.
+
+## Nightly Agent Rules (hard policy — no exceptions)
+
+- Always create a fresh `nightly/YYYY-MM-DD` branch from latest `main` before touching anything
+- NEVER commit to main. NEVER merge to main. NEVER deploy.
+- Use the iteration loop: make changes → `npm run build` → pass = commit, fail = revert + try different approach
+- Max 5 iterations, 45-minute budget. If nothing ships, document in GOTCHAS.md and report failure.
+- Branch stays isolated until operators approve in the morning via synthesis handover.
 
 ## Off-Limits
 - Do not modify the homepage without operator approval — client has seen and approved it
