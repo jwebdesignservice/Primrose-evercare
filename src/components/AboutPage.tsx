@@ -132,7 +132,7 @@ export default function AboutPage() {
               <div className="absolute inset-0 rounded-3xl bg-[#E8A4A0]/10 blur-2xl scale-105" />
               <div className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-xl border border-[#E8A4A0]/20">
                 <Image
-                  src="/images/care.jpg"
+                  src="/images/about-lady.jpg"
                   alt="Aminah Carew — Founder of Primrose Ever Care"
                   fill
                   className="object-cover"
@@ -310,7 +310,7 @@ export default function AboutPage() {
               <div className="absolute inset-0 rounded-3xl bg-[#4A7FA5]/10 blur-2xl scale-105" />
               <div className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-xl border border-[#4A7FA5]/10">
                 <Image
-                  src="/images/hero.jpg"
+                  src="/images/about-carer.jpg"
                   alt="Our commitment to quality care"
                   fill
                   className="object-cover"
