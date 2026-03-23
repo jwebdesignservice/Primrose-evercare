@@ -53,9 +53,14 @@ Definition of done:
 ## Nightly Agent Rules (hard policy — no exceptions)
 - Always create a fresh `nightly/YYYY-MM-DD` branch from latest `main` before touching anything
 - NEVER commit to main. NEVER merge to main. NEVER deploy.
-- Iteration loop: make changes → `npm run build` → pass=commit, fail=`git checkout . && git clean -fd` then try a different approach
-- Max 5 iterations, 45-minute budget. If nothing ships, document in GOTCHAS.md and report failure.
+- Do not spawn subagents — do all work inline.
+- Iteration loop: make changes → `npm run build` → pass=commit, fail=`git checkout . && git clean -fd` then try a DIFFERENT approach
+- Max 5 iterations, 45-minute budget. If nothing ships, post failure to Discord channel 1485697827324825611 then STOP.
 - Branch stays isolated until operators approve in the morning.
+
+## STOP Instruction
+After committing and pushing the nightly branch, STOP. Do not continue.
+If you encounter an unrecoverable error, post to Discord channel 1485697827324825611: `❌ Primrose Nightly FAILED — [DATE] / Error: [what] / Last step: [what]` then STOP.
 
 ## Flow Exception (2026-03-23)
 About page was built directly by George outside the Oracle → Paperclip flow. Kept as one-off exception.
@@ -77,3 +82,4 @@ All remaining work must go through correct flow: brief → Oracle → George →
 ## Context
 - Homepage ✅ Contact ✅ Services ✅ About ✅ Cookies Policy ✅ Cookie Banner ✅ Areas We Cover ✅ Complaints ✅ Privacy Policy ✅ Safeguarding ✅ — all on main
 - Remaining: contact form email integration only (JWE-2)
+g: contact form email integration only (JWE-2)
