@@ -39,6 +39,7 @@ export default function ContactForm() {
   const [step, setStep] = useState(1);
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
@@ -53,9 +54,24 @@ export default function ContactForm() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
-    await new Promise((r) => setTimeout(r, 1200));
-    setLoading(false);
-    setSubmitted(true);
+    setSubmitError(null);
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      });
+      const data = await res.json();
+      if (!res.ok || !data.success) {
+        setSubmitError(data.error || 'Something went wrong. Please try again or call us directly.');
+      } else {
+        setSubmitted(true);
+      }
+    } catch {
+      setSubmitError('Unable to send your enquiry. Please try again or call us directly.');
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -360,6 +376,9 @@ export default function ContactForm() {
                             )}
                           </button>
                           <p className="text-xs text-[#1E293B]/40">By submitting you agree to be contacted regarding your enquiry. We never share your details.</p>
+                          {submitError && (
+                            <p className="text-xs text-red-500 mt-1">{submitError}</p>
+                          )}
                         </div>
                       </div>
                     </motion.form>
