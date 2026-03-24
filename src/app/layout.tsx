@@ -17,9 +17,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Primrose Ever Care | Home Care Services in Medway",
+  title: "Primrose Ever Care | Home Care Services in Kent",
   description:
-    "Compassionate domiciliary care in Rochester, Chatham, Gillingham, Strood and Rainham.",
+    "Compassionate domiciliary home care across North Kent — Dartford, Gravesend, Medway, Maidstone and Swale.",
 };
 
 export default function RootLayout({

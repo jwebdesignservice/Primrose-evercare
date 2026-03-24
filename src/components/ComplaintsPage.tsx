@@ -261,19 +261,20 @@ export default function ComplaintsPage() {
 
               <div className="border-t border-gray-100 pt-4">
                 <h3 className="font-heading text-lg font-semibold text-[#1E293B] mb-1">
-                  Local Government and Social Care Ombudsman
+                  Kent County Council Adult Safeguarding Team
                 </h3>
                 <p>
-                  If your care is funded by a local authority, you may also be able to raise a
-                  complaint with the Local Government and Social Care Ombudsman.
+                  If your concern involves a safeguarding matter or potential abuse or neglect,
+                  you can contact the Kent County Council Adult Safeguarding Team directly.
                 </p>
                 <ul className="mt-2 space-y-1">
+                  <li><strong>Phone:</strong> 03000 41 61 61</li>
+                  <li><strong>Emergency (out of hours):</strong> 03000 41 91 91</li>
                   <li><strong>Website:</strong>{' '}
-                    <a href="https://www.lgo.org.uk" target="_blank" rel="noopener noreferrer" className="text-[#4A7FA5] underline underline-offset-2 hover:text-[#D4887F] transition-colors">
-                      lgo.org.uk
+                    <a href="https://www.kent.gov.uk/social-care-and-health/adult-social-care/report-a-concern-about-an-adult" target="_blank" rel="noopener noreferrer" className="text-[#4A7FA5] underline underline-offset-2 hover:text-[#D4887F] transition-colors">
+                      kent.gov.uk
                     </a>
                   </li>
-                  <li><strong>Phone:</strong> 0300 061 0614</li>
                 </ul>
               </div>
             </div>
@@ -286,6 +287,15 @@ export default function ComplaintsPage() {
                 All complaints are handled in strict confidence. Information will only be shared
                 with those who need to know in order to investigate and respond to your complaint.
                 Making a complaint will not affect the care you or your loved one receives.
+              </p>
+              <p className="mt-3">
+                All information provided during the complaints process will be managed in accordance
+                with the <strong>UK GDPR</strong> and the <strong>Data Protection Act 2018</strong>.
+                Please see our{' '}
+                <a href="/privacy-policy" className="text-[#4A7FA5] underline underline-offset-2 hover:text-[#D4887F] transition-colors">
+                  Privacy Policy
+                </a>{' '}
+                for further details.
               </p>
             </div>
 

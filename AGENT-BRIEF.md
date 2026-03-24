@@ -32,21 +32,19 @@ Before appending, check if an entry from today's date and your project already e
 ## Tonight's Task
 ONE task only. Do not spawn subagents. Do all work inline.
 
-Wire the contact form to send emails using Resend.
+SEO metadata pass across all public pages.
 
 Steps:
-1. npm install resend
-2. Create src/app/api/contact/route.ts as a Next.js API route handler
-3. Use Resend to email form submissions to enquires@primroseevercare.co.uk
-4. Fields: name, email, phone, message
-5. Return JSON success/error response
-6. Update ContactForm.tsx to POST to the API route on submit
-
-Note: Use a test Resend API key if no production key available - document in GOTCHAS.md.
+1. Add unique `<title>` and `<meta name="description">` to every page (about, contact, services, areas-we-cover, complaints, cookies-policy, privacy-policy, safeguarding) using Next.js metadata exports
+2. Add Open Graph tags (og:title, og:description, og:image, og:url) to every page — use the site's pink hero image or logo as og:image
+3. Add canonical link tags to every page
+4. Verify the homepage already has metadata — if not, add it too
+5. Run npm run build — confirm no errors
 
 Definition of done:
-- API route exists at /api/contact
-- Form submits without errors
+- Every page has a unique title + description
+- All pages have OG tags
+- All pages have canonical links
 - Build passes: npm run build
 - Changes committed to nightly/YYYY-MM-DD branch
 - Changes NOT merged to main
@@ -79,3 +77,4 @@ If you encounter any unrecoverable error at any point: post to Discord channel 1
 
 ## Context
 - All pages live on main. Remaining: contact form email integration only (JWE-2)
+

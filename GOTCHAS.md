@@ -20,19 +20,24 @@ Read this before touching anything. Format: [YYYY-MM-DD] What I tried â†’ what w
 ## [2026-03-23] git checkout . doesn't remove new files
 **Tried:** git checkout . to revert failed iteration
 **Problem:** Only reverts tracked files. New untracked files (new components, pages) remain and can cause build conflicts
-**Fix:** git checkout . && git clean -fd — removes untracked files and directories too
+**Fix:** git checkout . && git clean -fd ï¿½ removes untracked files and directories too
 
 ## [2026-03-23] Branch collision on re-run
 **Tried:** git checkout -b nightly/YYYY-MM-DD on a date that already has a branch
-**Problem:** Fails with "branch already exists" — hard stop
+**Problem:** Fails with "branch already exists" ï¿½ hard stop
 **Fix:** git checkout nightly/YYYY-MM-DD && git reset --hard main if branch exists
 
 ## [2026-03-23] Footer links still point to /#about not /about
 **Tried:** Updating Navbar links
-**Problem:** Footer has its own separate quickLinks array — both Navbar.tsx AND Footer.tsx need updating
+**Problem:** Footer has its own separate quickLinks array ï¿½ both Navbar.tsx AND Footer.tsx need updating
 **Fix:** Always update both files when adding/changing page routes
 
 ## [2026-03-23] Resend requires RESEND_API_KEY in Vercel env vars
 **Tried:** Building Resend integration without production key
 **Problem:** Build passes, but form submissions silently fail at runtime without the env var
 **Fix:** Add RESEND_API_KEY to Vercel project env vars before going live. Use test mode during dev.
+
+## [2026-03-24] Resend throws at module init if env var is missing â€” breaks Next.js build
+**Tried:** `const resend = new Resend(process.env.RESEND_API_KEY)` at module level in API route
+**Problem:** Next.js runs the route module during `npm run build` to collect page data. Resend throws `Missing API key` immediately â†’ build fails.
+**Fix:** Lazy-initialize inside the handler: `const resend = new Resend(process.env.RESEND_API_KEY ?? 'MISSING_KEY')`. Build passes; at runtime without the env var, Resend returns an auth error which we catch and return as a user-facing message.

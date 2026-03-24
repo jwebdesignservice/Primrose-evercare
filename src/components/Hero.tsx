@@ -71,7 +71,7 @@ export default function Hero() {
             >
               <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold tracking-widest uppercase bg-[#E8A4A0]/15 text-[#D4887F] mb-6">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#D4887F] inline-block" />
-                Compassionate Care in Medway
+                Compassionate Care Across Kent
               </span>
             </motion.div>
 
@@ -84,7 +84,7 @@ export default function Hero() {
             >
               Compassionate{" "}
               <span className="text-[#E8A4A0]">Home Care</span>{" "}
-              In Medway
+              Across Kent
             </motion.h1>
 
             <motion.p
@@ -145,7 +145,7 @@ export default function Hero() {
                   {"★★★★★"}
                 </div>
                 <p className="text-xs text-[#1E293B]/55 font-medium">
-                  Trusted by families across Medway
+                  Trusted by families across Kent
                 </p>
               </div>
             </motion.div>
@@ -170,7 +170,7 @@ export default function Hero() {
               <div className="relative aspect-square rounded-full overflow-hidden shadow-2xl border-4 border-white">
                 <Image
                   src="/images/hero.jpg"
-                  alt="Compassionate home care in Medway"
+                  alt="Compassionate home care across Kent"
                   fill
                   className="object-cover"
                   priority
