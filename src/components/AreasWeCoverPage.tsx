@@ -55,17 +55,7 @@ const areaGroups = [
       { name: 'Maidstone', detail: 'Town centre and borough' },
     ],
   },
-  {
-    region: 'Swale',
-    color: 'text-[#9B7EC8]',
-    bg: 'bg-[#F3EEF8]',
-    accent: '#9B7EC8',
-    towns: [
-      { name: 'Sittingbourne', detail: 'Including Milton Regis' },
-      { name: 'Faversham', detail: 'Town and surrounding villages' },
-      { name: 'Sheerness', detail: 'Isle of Sheppey' },
-    ],
-  },
+
 ];
 
 const allTowns = areaGroups.flatMap((g) => g.towns.map((t) => t.name));
@@ -96,7 +86,7 @@ export default function AreasWeCoverPage() {
             </h1>
             <p className="text-[#1E293B]/60 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
               We provide home care services across North Kent — from Dartford in the west to
-              Sheerness in the east. If you&apos;re not sure whether we cover your area, just give us a call.
+              Maidstone and beyond. If you&apos;re not sure whether we cover your area, just give us a call.
             </p>
           </motion.div>
 

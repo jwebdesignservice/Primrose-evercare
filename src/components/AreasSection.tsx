@@ -12,9 +12,6 @@ const areas = [
   { label: 'Gillingham' },
   { label: 'Rainham' },
   { label: 'Maidstone' },
-  { label: 'Sittingbourne' },
-  { label: 'Faversham' },
-  { label: 'Sheerness' },
 ];
 
 const containerVariants: Variants = {
@@ -45,7 +42,7 @@ export default function AreasSection() {
             Serving Families Across Kent
           </h2>
           <p className="text-[#1E293B]/65 text-lg max-w-xl mx-auto">
-            We provide reliable home care across North Kent, from Dartford to Swale
+            We provide reliable home care across North Kent, from Dartford to Maidstone
           </p>
         </motion.div>
 

@@ -69,12 +69,13 @@ If you hit failure after 5 attempts: post to Discord channel 1485697827324825611
 If you encounter any unrecoverable error at any point: post to Discord channel 1485697827324825611 then STOP.
 
 ## Known Issues
-- Resend API key not yet set in Vercel env vars - needed before emails go live
-- Contact form shows thank-you screen but does NOT send emails (this is tonight's task)
+- Resend API key not yet set in Vercel env vars — emails won't send at runtime until added to Vercel env vars
 
 ## Recently Completed
+- 2026-03-25: SEO metadata pass — OG tags, canonical links, title template, metadataBase added across all 9 pages. Build passed. nightly/2026-03-25 ready to merge.
+- 2026-03-24: Contact form email integration (Resend) — nightly/2026-03-24 merged
 - 2026-03-23: Services, About, Cookies Policy, Cookie Banner, Areas We Cover, Complaints, Privacy Policy, Safeguarding - all live
 
 ## Context
-- All pages live on main. Remaining: contact form email integration only (JWE-2)
+- All pages live on main with full SEO metadata. Remaining: accessibility/performance pass, then project is near-complete.
 

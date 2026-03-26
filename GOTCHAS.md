@@ -41,3 +41,16 @@ Read this before touching anything. Format: [YYYY-MM-DD] What I tried → what w
 **Tried:** `const resend = new Resend(process.env.RESEND_API_KEY)` at module level in API route
 **Problem:** Next.js runs the route module during `npm run build` to collect page data. Resend throws `Missing API key` immediately → build fails.
 **Fix:** Lazy-initialize inside the handler: `const resend = new Resend(process.env.RESEND_API_KEY ?? 'MISSING_KEY')`. Build passes; at runtime without the env var, Resend returns an auth error which we catch and return as a user-facing message.
+
+## [2026-03-25] Next.js metadata: use title template + metadataBase in layout.tsx
+**Context:** SEO metadata pass across all pages.
+**Fix:** In `layout.tsx`, set `title: { default: 'Primrose Ever Care', template: '%s | Primrose Ever Care' }` so individual pages only need the short title (e.g. 'About Us') and the suffix appends automatically. Also set `metadataBase: new URL('https://primrose-ever-care.vercel.app')` so relative OG image paths (e.g. `/images/hero.jpg`) resolve to absolute URLs for social crawlers — without this, OG images may not render in social previews.
+
+## [2026-03-26] ContactForm Field component: label not associated with input
+**Context:** Accessibility audit — screen readers couldn't associate form labels with inputs.
+**Problem:** The `Field` component rendered `<label>` as a sibling of the input, not wrapping it, and had no `htmlFor`/`id` pair. Screen readers would read the label text without connecting it to the input.
+**Fix:** Changed `Field` to wrap `children` inside the `<label>` element (implicit association). The label text is wrapped in a `<span>` to maintain layout. This works for all input types — no IDs required.
+
+## [2026-03-26] Step indicator icons need aria-hidden when inside labelled containers
+**Context:** Step progress dots in ContactForm use `<CheckCircle>` icon when a step is complete.
+**Fix:** Mark icon as `aria-hidden="true"` when it's inside a div that already has `aria-label`. Add `role="status"` + `aria-live="polite"` on the outer step indicator container so screen readers announce step changes.

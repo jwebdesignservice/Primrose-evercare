@@ -81,9 +81,9 @@ export default function SafeguardingPage() {
               <h2 className="font-heading text-xl font-semibold text-[#1E293B] mb-2">Our Safeguarding Statement</h2>
               <p className="text-[#1E293B]/70 text-sm leading-relaxed">
                 Primrose Ever Care is committed to safeguarding and promoting the welfare of all
-                adults in our care. We believe that every person has the right to live free from
-                abuse, neglect and exploitation. Safeguarding is everyone&apos;s responsibility — not
-                just a policy on paper.
+                adults in our care. This policy ensures that vulnerable adults are protected from
+                abuse, neglect, and harm, and that all staff understand their responsibilities in
+                identifying and reporting concerns.
               </p>
             </div>
           </div>
@@ -148,35 +148,71 @@ export default function SafeguardingPage() {
           </Section>
 
           <Section title="6. Reporting a Concern">
-            <p>
-              If a member of staff, a client or a family member has a safeguarding concern, it
-              must be reported immediately. We have a designated safeguarding lead who is responsible
-              for receiving and acting on concerns.
-            </p>
-            <p>
-              <strong>Internal reporting:</strong> Contact the safeguarding lead at Primrose Ever Care
-              immediately by phone or in writing.
-            </p>
-            <p>
-              <strong>External reporting:</strong> Where there is immediate risk of harm, contact the
-              emergency services (999). Concerns about an adult at risk in Kent should also be
-              reported to Kent Adult Social Services.
-            </p>
-            <div className="mt-4 bg-[#FEF3F2] border border-[#E8A4A0]/30 rounded-xl p-5 space-y-2">
-              <p className="font-semibold text-[#1E293B] text-sm">Key Contacts</p>
+            {/* Safeguarding Lead */}
+            <div className="bg-[#EBF4FB] border border-[#4A7FA5]/20 rounded-xl p-5 space-y-1">
+              <p className="font-semibold text-[#1E293B] text-sm mb-2">Designated Safeguarding Lead</p>
+              <p><strong>Registered Manager / Nominated Individual</strong></p>
+              <p>Aminah Carew</p>
+              <p>
+                Telephone:{' '}
+                <a href="tel:07852559816" className="text-[#4A7FA5] hover:text-[#D4887F] transition-colors">07852 559816</a>
+              </p>
+              <p>
+                Email:{' '}
+                <a href="mailto:info@primroseevercare.co.uk" className="text-[#4A7FA5] hover:text-[#D4887F] transition-colors">
+                  info@primroseevercare.co.uk
+                </a>
+              </p>
+              <p className="pt-2 text-[#1E293B]/60 text-xs">
+                The Safeguarding Lead is responsible for ensuring all safeguarding concerns are
+                appropriately reported, investigated, and recorded.
+              </p>
+            </div>
+
+            {/* Reporting steps */}
+            <p className="font-semibold text-[#1E293B]">Reporting Procedure</p>
+            <ol className="space-y-2 list-none">
+              {[
+                'Identify the concern (signs, disclosure, or incident)',
+                'Ensure the immediate safety of the service user if required',
+                'Record the information accurately including date, time, and details',
+                'Report immediately to the Registered Manager / Safeguarding Lead',
+                'Refer to the Local Authority Safeguarding Team where appropriate',
+              ].map((step, i) => (
+                <li key={i} className="flex items-start gap-3">
+                  <span className="flex-shrink-0 w-6 h-6 rounded-full bg-[#4A7FA5]/15 text-[#4A7FA5] text-xs font-bold flex items-center justify-center mt-0.5">
+                    {i + 1}
+                  </span>
+                  <span>{step}</span>
+                </li>
+              ))}
+            </ol>
+
+            {/* What happens after */}
+            <p className="font-semibold text-[#1E293B]">What Happens After a Concern is Reported</p>
+            <ul className="space-y-2">
+              {[
+                'Immediate steps will be taken to protect the service user',
+                'The safeguarding concern will be reported to the local authority where appropriate',
+                'An investigation may be carried out by the local authority safeguarding team or other relevant agencies',
+                'Primrose Ever Care LTD will fully cooperate with investigations',
+                'Appropriate support will be provided to the service user throughout the process',
+              ].map((item) => (
+                <li key={item} className="flex items-start gap-3">
+                  <CheckCircle2 className="w-4 h-4 mt-0.5 shrink-0 text-[#4A7FA5]" strokeWidth={2} />
+                  {item}
+                </li>
+              ))}
+            </ul>
+
+            {/* Key contacts */}
+            <div className="bg-[#FEF3F2] border border-[#E8A4A0]/30 rounded-xl p-5 space-y-2">
+              <p className="font-semibold text-[#1E293B] text-sm">Key External Contacts</p>
               <ul className="space-y-1 text-sm text-[#1E293B]/70">
                 <li><strong>Emergency:</strong> 999</li>
                 <li><strong>Kent Adult Social Services:</strong> 03000 41 61 61</li>
                 <li>
-                  <strong>Primrose Ever Care:</strong>{' '}
-                  <a href="tel:07852559816" className="text-[#4A7FA5] hover:text-[#D4887F] transition-colors">07852 559816</a>
-                  {' '}|{' '}
-                  <a href="mailto:enquires@primroseevercare.co.uk" className="text-[#4A7FA5] hover:text-[#D4887F] transition-colors">
-                    enquires@primroseevercare.co.uk
-                  </a>
-                </li>
-                <li>
-                  <strong>CQC (to report concerns about a provider):</strong>{' '}
+                  <strong>CQC:</strong>{' '}
                   <a href="https://www.cqc.org.uk/give-feedback-on-care" target="_blank" rel="noopener noreferrer" className="text-[#4A7FA5] underline underline-offset-2 hover:text-[#D4887F] transition-colors">
                     cqc.org.uk
                   </a>{' '}| 03000 616161
