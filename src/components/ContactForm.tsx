@@ -108,13 +108,16 @@ export default function ContactForm() {
 
         {/* Step indicator */}
         {!submitted && (
-          <motion.div className="flex items-center justify-center gap-4 mb-10" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2 }}>
+          <motion.div className="flex items-center justify-center gap-4 mb-10" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2 }} role="status" aria-live="polite" aria-label={`Step ${step} of 2`}>
             {[1, 2].map((s) => (
               <div key={s} className="flex items-center gap-3">
-                <div className={`w-9 h-9 rounded-full flex items-center justify-center text-sm font-bold transition-all duration-300 ${
-                  step >= s ? 'bg-gradient-to-r from-[#4A7FA5] to-[#5B8FB9] text-white shadow-md' : 'bg-white border-2 border-gray-200 text-[#1E293B]/40'
-                }`}>
-                  {step > s ? <CheckCircle className="w-5 h-5" /> : s}
+                <div
+                  className={`w-9 h-9 rounded-full flex items-center justify-center text-sm font-bold transition-all duration-300 ${
+                    step >= s ? 'bg-gradient-to-r from-[#4A7FA5] to-[#5B8FB9] text-white shadow-md' : 'bg-white border-2 border-gray-200 text-[#1E293B]/40'
+                  }`}
+                  aria-label={step > s ? `Step ${s} complete` : `Step ${s}${step === s ? ' — current' : ''}`}
+                >
+                  {step > s ? <CheckCircle className="w-5 h-5" aria-hidden="true" /> : s}
                 </div>
                 <span className={`text-sm font-medium hidden sm:block ${step >= s ? 'text-[#4A7FA5]' : 'text-[#1E293B]/40'}`}>
                   {s === 1 ? 'About You & the Person' : 'Care Requirements'}
@@ -412,10 +415,10 @@ export default function ContactForm() {
 function Field({ label, required, children }: { label: string; required?: boolean; children: React.ReactNode }) {
   return (
     <div className="flex flex-col gap-1.5">
-      <label className="text-sm font-medium text-[#1E293B]/70">
-        {label}{required && <span className="text-[#D4887F] ml-0.5">*</span>}
+      <label className="text-sm font-medium text-[#1E293B]/70 flex flex-col gap-1.5">
+        <span>{label}{required && <span className="text-[#D4887F] ml-0.5">*</span>}</span>
+        {children}
       </label>
-      {children}
     </div>
   );
 }

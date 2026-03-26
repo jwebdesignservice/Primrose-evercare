@@ -59,7 +59,7 @@ export default function CookieBanner() {
                 aria-label="Close cookie banner"
                 className="text-[#1E293B]/40 hover:text-[#1E293B]/70 transition-colors mt-0.5"
               >
-                <X className="w-4 h-4" strokeWidth={2} />
+                <X className="w-4 h-4" strokeWidth={2} aria-hidden="true" />
               </button>
             </div>
 
