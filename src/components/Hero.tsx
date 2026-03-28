@@ -29,28 +29,28 @@ export default function Hero() {
         <div className="absolute top-1/2 left-12 w-3 h-3 rounded-full bg-[#E8A4A0]/20" />
 
         {/* Thin cross / plus shapes */}
-        <svg className="absolute top-36 right-1/3 w-8 h-8 text-[#E8A4A0]/20" viewBox="0 0 32 32" fill="none">
+        <svg aria-hidden="true" className="absolute top-36 right-1/3 w-8 h-8 text-[#E8A4A0]/20" viewBox="0 0 32 32" fill="none">
           <line x1="16" y1="2" x2="16" y2="30" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
           <line x1="2" y1="16" x2="30" y2="16" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
         </svg>
-        <svg className="absolute bottom-32 left-1/3 w-6 h-6 text-[#5B8FB9]/20" viewBox="0 0 32 32" fill="none">
+        <svg aria-hidden="true" className="absolute bottom-32 left-1/3 w-6 h-6 text-[#5B8FB9]/20" viewBox="0 0 32 32" fill="none">
           <line x1="16" y1="2" x2="16" y2="30" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
           <line x1="2" y1="16" x2="30" y2="16" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
         </svg>
 
         {/* Small diamond shapes */}
-        <svg className="absolute top-1/4 left-8 w-5 h-5 text-[#D4887F]/20" viewBox="0 0 20 20" fill="currentColor">
+        <svg aria-hidden="true" className="absolute top-1/4 left-8 w-5 h-5 text-[#D4887F]/20" viewBox="0 0 20 20" fill="currentColor">
           <path d="M10 0 L20 10 L10 20 L0 10 Z" />
         </svg>
-        <svg className="absolute bottom-40 right-1/4 w-4 h-4 text-[#5B8FB9]/20" viewBox="0 0 20 20" fill="currentColor">
+        <svg aria-hidden="true" className="absolute bottom-40 right-1/4 w-4 h-4 text-[#5B8FB9]/20" viewBox="0 0 20 20" fill="currentColor">
           <path d="M10 0 L20 10 L10 20 L0 10 Z" />
         </svg>
 
         {/* Thin arc / partial ring */}
-        <svg className="absolute bottom-20 left-1/4 w-20 h-20 text-[#E8A4A0]/15" viewBox="0 0 80 80" fill="none">
+        <svg aria-hidden="true" className="absolute bottom-20 left-1/4 w-20 h-20 text-[#E8A4A0]/15" viewBox="0 0 80 80" fill="none">
           <path d="M10 70 Q40 10 70 70" stroke="currentColor" strokeWidth="1" strokeLinecap="round"/>
         </svg>
-        <svg className="absolute top-32 right-16 w-24 h-24 text-[#5B8FB9]/12" viewBox="0 0 80 80" fill="none">
+        <svg aria-hidden="true" className="absolute top-32 right-16 w-24 h-24 text-[#5B8FB9]/12" viewBox="0 0 80 80" fill="none">
           <circle cx="40" cy="40" r="35" stroke="currentColor" strokeWidth="1" strokeDasharray="6 8"/>
         </svg>
 
@@ -184,7 +184,7 @@ export default function Hero() {
                 transition={{ duration: 3.5, repeat: Infinity, ease: "easeInOut" }}
               >
                 <div className="w-8 h-8 rounded-full bg-[#5B8FB9]/15 flex items-center justify-center">
-                  <svg className="w-4 h-4 text-[#4A7FA5]" fill="currentColor" viewBox="0 0 24 24">
+                  <svg aria-hidden="true" className="w-4 h-4 text-[#4A7FA5]" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                   </svg>
                 </div>
@@ -201,7 +201,7 @@ export default function Hero() {
                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 0.8 }}
               >
                 <div className="w-8 h-8 rounded-full bg-[#E8A4A0]/20 flex items-center justify-center">
-                  <svg className="w-4 h-4 text-[#D4887F]" fill="currentColor" viewBox="0 0 24 24">
+                  <svg aria-hidden="true" className="w-4 h-4 text-[#D4887F]" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
                   </svg>
                 </div>

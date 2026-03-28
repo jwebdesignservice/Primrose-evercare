@@ -48,6 +48,7 @@ export default function TrustBar() {
           </div>
         )}
         <svg
+          aria-hidden="true"
           viewBox="0 0 1440 72"
           className="w-full block"
           preserveAspectRatio="none"

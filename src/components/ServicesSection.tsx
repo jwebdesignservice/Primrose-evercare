@@ -95,7 +95,7 @@ export default function ServicesSection() {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-[#9B7EC8]/6 blur-3xl" />
 
         {/* Decorative dots grid */}
-        <svg className="absolute inset-0 w-full h-full opacity-[0.04]" xmlns="http://www.w3.org/2000/svg">
+        <svg aria-hidden="true" className="absolute inset-0 w-full h-full opacity-[0.04]" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <pattern id="dots" x="0" y="0" width="32" height="32" patternUnits="userSpaceOnUse">
               <circle cx="2" cy="2" r="1.5" fill="#1E293B" />
@@ -105,10 +105,10 @@ export default function ServicesSection() {
         </svg>
 
         {/* Accent arcs */}
-        <svg className="absolute top-10 right-24 w-32 h-32 text-[#E8A4A0]/20" viewBox="0 0 100 100" fill="none">
+        <svg aria-hidden="true" className="absolute top-10 right-24 w-32 h-32 text-[#E8A4A0]/20" viewBox="0 0 100 100" fill="none">
           <circle cx="50" cy="50" r="45" stroke="currentColor" strokeWidth="1.5" strokeDasharray="8 6"/>
         </svg>
-        <svg className="absolute bottom-16 left-16 w-20 h-20 text-[#4A7FA5]/20" viewBox="0 0 100 100" fill="none">
+        <svg aria-hidden="true" className="absolute bottom-16 left-16 w-20 h-20 text-[#4A7FA5]/20" viewBox="0 0 100 100" fill="none">
           <circle cx="50" cy="50" r="45" stroke="currentColor" strokeWidth="1.5" strokeDasharray="5 7"/>
         </svg>
       </div>

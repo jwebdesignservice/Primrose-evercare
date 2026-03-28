@@ -97,7 +97,7 @@ export default function ContactForm() {
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <div className="absolute -top-20 -right-20 w-96 h-96 rounded-full bg-[#E8A4A0]/12 blur-3xl" />
         <div className="absolute -bottom-20 -left-20 w-[500px] h-[500px] rounded-full bg-[#4A7FA5]/10 blur-3xl" />
-        <svg className="absolute inset-0 w-full h-full opacity-[0.035]" xmlns="http://www.w3.org/2000/svg">
+        <svg aria-hidden="true" className="absolute inset-0 w-full h-full opacity-[0.035]" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <pattern id="dots-contact" x="0" y="0" width="32" height="32" patternUnits="userSpaceOnUse">
               <circle cx="2" cy="2" r="1.5" fill="#1E293B" />
@@ -417,7 +417,7 @@ export default function ContactForm() {
                         <div className="flex flex-col gap-2 w-full sm:w-auto">
                           <button type="submit" disabled={loading} className="inline-flex items-center justify-center gap-2.5 px-8 py-3.5 rounded-full text-white font-semibold text-sm bg-gradient-to-r from-[#4A7FA5] to-[#5B8FB9] shadow-md hover:shadow-[0_0_28px_rgba(74,127,165,0.45)] transition-all duration-300 hover:-translate-y-0.5 disabled:opacity-60 disabled:cursor-not-allowed">
                             {loading ? (
-                              <><svg className="w-4 h-4 animate-spin" viewBox="0 0 24 24" fill="none"><circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"/><path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"/></svg>Sending...</>
+                              <><svg aria-hidden="true" className="w-4 h-4 animate-spin" viewBox="0 0 24 24" fill="none"><circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"/><path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"/></svg>Sending...</>
                             ) : (
                               <><Send className="w-4 h-4" strokeWidth={2} />Send Enquiry</>
                             )}
