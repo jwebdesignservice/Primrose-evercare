@@ -17,9 +17,32 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Primrose Ever Care | Home Care Services in Kent",
+  metadataBase: new URL("https://primrose-ever-care.vercel.app"),
+  title: {
+    default: "Primrose Ever Care | Home Care Services in Kent",
+    template: "%s | Primrose Ever Care",
+  },
   description:
     "Compassionate domiciliary home care across North Kent — Dartford, Gravesend, Medway, Maidstone and Swale.",
+  openGraph: {
+    type: "website",
+    locale: "en_GB",
+    siteName: "Primrose Ever Care",
+    title: "Primrose Ever Care | Home Care Services in Kent",
+    description:
+      "Compassionate domiciliary home care across North Kent — Dartford, Gravesend, Medway, Maidstone and Swale.",
+    images: [
+      {
+        url: "/images/hero.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Primrose Ever Care — compassionate home care in North Kent",
+      },
+    ],
+  },
+  alternates: {
+    canonical: "https://primrose-ever-care.vercel.app",
+  },
 };
 
 export default function RootLayout({
