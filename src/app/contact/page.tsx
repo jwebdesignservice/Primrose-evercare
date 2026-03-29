@@ -4,8 +4,24 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Contact Us | Primrose Ever Care',
+  title: 'Contact Us',
   description: 'Get in touch with Primrose Ever Care. Book a free care assessment or enquire about our home care services in Medway.',
+  openGraph: {
+    title: 'Contact Us | Primrose Ever Care',
+    description: 'Get in touch with Primrose Ever Care. Book a free care assessment or enquire about our home care services in Medway.',
+    url: 'https://primrose-ever-care.vercel.app/contact',
+    images: [
+      {
+        url: '/images/hero.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Contact Primrose Ever Care',
+      },
+    ],
+  },
+  alternates: {
+    canonical: 'https://primrose-ever-care.vercel.app/contact',
+  },
 };
 
 export default function ContactPage() {
