@@ -1,7 +1,10 @@
 'use client';
 
+import dynamic from 'next/dynamic';
 import { motion, Variants } from 'framer-motion';
 import { MapPin } from 'lucide-react';
+
+const CoverageMap = dynamic(() => import('./CoverageMap'), { ssr: false });
 
 const areas = [
   { label: 'Dartford' },
@@ -83,16 +86,7 @@ export default function AreasSection() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="rounded-2xl overflow-hidden shadow-md border border-[#E8A4A0]/20 w-full h-[420px]"
         >
-          <iframe
-            title="Primrose Ever Care Service Area — North Kent"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d161000!2d0.5200!3d51.3700!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8d8c5e0b0a5a5%3A0x1a2b3c4d5e6f7g8h!2sNorth%20Kent%2C%20UK!5e0!3m2!1sen!2suk!4v1710000000001!5m2!1sen!2suk"
-            width="100%"
-            height="100%"
-            style={{ border: 0 }}
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          />
+          <CoverageMap height="420px" />
         </motion.div>
       </div>
     </section>
