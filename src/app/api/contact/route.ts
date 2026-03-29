@@ -66,7 +66,7 @@ Sent automatically from the Primrose Ever Care website contact form.
     `.trim();
 
     const { error } = await resend.emails.send({
-      from: 'Primrose Ever Care Website <noreply@primroseevercare.co.uk>',
+      from: 'Primrose Ever Care Website <onboarding@resend.dev>',
       to: ['enquires@primroseevercare.co.uk'],
       replyTo: email,
       subject: `New Care Enquiry — ${firstName} ${lastName}`,
