@@ -154,7 +154,7 @@ export default function ContactForm() {
                 {[
                   { icon: Phone, bg: 'bg-[#FEF3F2]', color: 'text-[#D4887F]', label: 'Phone', content: <a href="tel:07852559816" className="text-[#1E293B] font-medium hover:text-[#D4887F] transition-colors">07852 559816</a> },
                   { icon: Mail, bg: 'bg-[#EBF4FB]', color: 'text-[#4A7FA5]', label: 'Email', content: <a href="mailto:enquires@primroseevercare.co.uk" className="text-[#1E293B] font-medium hover:text-[#4A7FA5] transition-colors break-all text-sm">enquires@primroseevercare.co.uk</a> },
-                  { icon: MapPin, bg: 'bg-[#EEF5EE]', color: 'text-[#7B9E7B]', label: 'Areas Covered', content: <p className="text-[#1E293B] font-medium text-sm leading-relaxed">Rochester, Chatham, Gillingham,<br />Strood, Rainham</p> },
+                  { icon: MapPin, bg: 'bg-[#EEF5EE]', color: 'text-[#7B9E7B]', label: 'Areas Covered', content: <p className="text-[#1E293B] font-medium text-sm leading-relaxed">Dartford, Gravesend, Medway,<br />Maidstone, Sittingbourne &amp; Isle of Sheppey</p> },
                   { icon: Clock, bg: 'bg-[#F3EEF8]', color: 'text-[#9B7EC8]', label: 'Response Time', content: <p className="text-[#1E293B] font-medium text-sm">Within 24 hours</p> },
                 ].map(({ icon: Icon, bg, color, label, content }) => (
                   <div key={label} className="flex items-start gap-4">
@@ -275,13 +275,18 @@ export default function ContactForm() {
                           <Field label="Area / Location *" required>
                             <select name="location" value={form.location} onChange={handleChange} required className={selectClass}>
                               <option value="">Please select...</option>
+                              <option>Dartford</option>
+                              <option>Gravesend / Northfleet</option>
                               <option>Rochester</option>
                               <option>Chatham</option>
                               <option>Gillingham</option>
                               <option>Strood</option>
                               <option>Rainham</option>
                               <option>Other Medway area</option>
-                              <option>Outside Medway — please advise</option>
+                              <option>Maidstone</option>
+                              <option>Sittingbourne</option>
+                              <option>Isle of Sheppey</option>
+                              <option>Outside these areas — please advise</option>
                             </select>
                           </Field>
                         </div>
@@ -435,7 +440,7 @@ export default function ContactForm() {
         <motion.div className="mt-14" initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.4 }}>
           <div className="text-center mb-6">
             <h2 className="font-heading text-2xl sm:text-3xl font-semibold text-[#1E293B] mb-2">Our Service Area</h2>
-            <p className="text-[#1E293B]/55 text-base">We cover Rochester, Chatham, Gillingham, Strood and Rainham</p>
+            <p className="text-[#1E293B]/55 text-base">We cover Dartford, Gravesend, Medway, Maidstone, Sittingbourne and Isle of Sheppey</p>
           </div>
           <div className="rounded-2xl overflow-hidden shadow-md border border-[#E8A4A0]/15 w-full h-[320px] sm:h-[420px]">
             <iframe
