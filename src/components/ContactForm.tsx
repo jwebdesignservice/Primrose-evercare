@@ -1,9 +1,6 @@
 'use client';
 
-import dynamic from 'next/dynamic';
 import { useState } from 'react';
-
-const CoverageMap = dynamic(() => import('./CoverageMap'), { ssr: false });
 import { motion, AnimatePresence } from 'framer-motion';
 import { Phone, Mail, MapPin, Clock, Send, CheckCircle, ChevronRight, ChevronLeft } from 'lucide-react';
 
@@ -446,7 +443,11 @@ export default function ContactForm() {
             <p className="text-[#1E293B]/55 text-base">We cover Dartford, Gravesend, Medway, Maidstone, Sittingbourne and Isle of Sheppey</p>
           </div>
           <div className="rounded-2xl overflow-hidden shadow-md border border-[#E8A4A0]/15 w-full h-[320px] sm:h-[420px]">
-            <CoverageMap height="100%" />
+            <iframe
+              title="Primrose Ever Care Service Area — North Kent"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126720!2d0.5600!3d51.3700!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8d8c5e0b0a5a5%3A0x1a2b3c4d5e6f7g8h!2sNorth%20Kent%2C%20UK!5e0!3m2!1sen!2suk!4v1710000000001!5m2!1sen!2suk"
+              width="100%" height="100%" style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"
+            />
           </div>
         </motion.div>
 
