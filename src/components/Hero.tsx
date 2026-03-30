@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 32 },
@@ -159,22 +158,20 @@ export default function Hero() {
             transition={{ duration: 0.9, delay: 0.15, ease: "easeOut" }}
           >
             <div className="relative w-full max-w-[460px]">
-              {/* Decorative ring behind circle */}
-              <div className="absolute inset-0 rounded-full border-2 border-[#E8A4A0]/25 scale-110" />
-              <div className="absolute inset-0 rounded-full border border-[#5B8FB9]/15 scale-125" />
-
               {/* Pink soft glow */}
-              <div className="absolute inset-0 rounded-full bg-[#E8A4A0]/10 blur-2xl scale-110" />
+              <div className="absolute inset-0 rounded-[10px] bg-[#E8A4A0]/10 blur-2xl scale-110" />
 
-              {/* Circle image */}
-              <div className="relative aspect-square rounded-full overflow-hidden shadow-2xl border-4 border-white">
-                <Image
-                  src="/images/hero.jpg"
-                  alt="Compassionate home care across Kent"
-                  fill
-                  className="object-cover"
-                  priority
-                />
+              {/* Square video */}
+              <div className="relative aspect-square rounded-[10px] overflow-hidden shadow-2xl border-4 border-white">
+                <video
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  className="absolute inset-0 w-full h-full object-cover"
+                >
+                  <source src="/videos/primrose-video-hero.mp4" type="video/mp4" />
+                </video>
               </div>
 
               {/* Floating badge: DBS Checked */}
