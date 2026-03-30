@@ -318,7 +318,7 @@ export default function ServicesPage() {
             >
               <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-[#E8A4A0]/20">
                 <video
-                  src="/videos/hero-care.mp4"
+                  src="/videos/service-hero.mp4"
                   autoPlay
                   muted
                   loop
