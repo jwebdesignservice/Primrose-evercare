@@ -171,7 +171,7 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-4 text-[#1E293B]/65 text-base leading-relaxed">
                 <p>
-                  Primrose Ever Care was founded by <strong className="text-[#1E293B]">Aminah Carew</strong> with a simple but powerful belief:
+                  Primrose Ever Care was founded by <strong className="text-[#1E293B]">Aminah Carew</strong>, a Prescribing Paramedic Practitioner and Primary Care Home Visiting Specialist, with a simple but powerful belief:
                   everyone deserves to grow older with dignity, in the place they call home.
                 </p>
                 <p>
