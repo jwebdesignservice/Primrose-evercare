@@ -45,6 +45,47 @@ export const metadata: Metadata = {
   },
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  name: "Primrose Ever Care",
+  description:
+    "Compassionate domiciliary home care services across Medway and North Kent, provided by Primrose Ever Care LTD.",
+  url: "https://primrose-ever-care.vercel.app",
+  logo: "https://primrose-ever-care.vercel.app/logo.png",
+  image: "https://primrose-ever-care.vercel.app/images/hero.jpg",
+  telephone: "",
+  address: {
+    "@type": "PostalAddress",
+    addressRegion: "Kent",
+    addressCountry: "GB",
+  },
+  areaServed: [
+    { "@type": "Place", name: "Medway" },
+    { "@type": "Place", name: "North Kent" },
+    { "@type": "Place", name: "Dartford" },
+    { "@type": "Place", name: "Gravesend" },
+    { "@type": "Place", name: "Maidstone" },
+    { "@type": "Place", name: "Swale" },
+  ],
+  serviceType: "Domiciliary home care",
+  priceRange: "££",
+  openingHoursSpecification: {
+    "@type": "OpeningHoursSpecification",
+    dayOfWeek: [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday",
+    ],
+    opens: "00:00",
+    closes: "23:59",
+  },
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -55,6 +96,12 @@ export default function RootLayout({
       lang="en"
       className={`${cormorantGaramond.variable} ${inter.variable}`}
     >
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className="antialiased">
         {children}
         <CookieBanner />
