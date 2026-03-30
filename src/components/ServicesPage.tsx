@@ -268,42 +268,68 @@ export default function ServicesPage() {
         <div className="absolute -top-24 -left-24 w-96 h-96 rounded-full bg-[#E8A4A0]/15 blur-3xl pointer-events-none" />
         <div className="absolute -bottom-24 -right-24 w-[500px] h-[500px] rounded-full bg-[#4A7FA5]/10 blur-3xl pointer-events-none" />
 
-        <div className="relative max-w-3xl mx-auto px-6 lg:px-8 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-          >
-            <span className="inline-block px-4 py-1.5 rounded-full text-xs font-semibold tracking-widest uppercase bg-[#E8A4A0]/20 text-[#D4887F] mb-5">
-              What We Offer
-            </span>
-            <h1 className="font-heading text-5xl md:text-6xl font-semibold text-[#1E293B] mb-5 leading-tight">
-              Our Care Services
-            </h1>
-            <p className="text-[#1E293B]/60 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
-              Every person is different. We offer a full range of home care services — from a few hours of support
-              a week to round-the-clock live-in care — all tailored to what your loved one actually needs.
-            </p>
-          </motion.div>
+        <div className="relative max-w-6xl mx-auto px-6 lg:px-8">
+          <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
 
-          {/* Jump nav */}
-          <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="mt-10 flex flex-wrap justify-center gap-3"
-          >
-            {services.map((s) => (
-              <a
-                key={s.id}
-                href={`#${s.id}`}
-                className="px-4 py-2 rounded-full text-xs font-semibold border-2 border-[#E8A4A0]/50 text-[#1E293B]/70
-                  hover:border-[#D4887F] hover:text-[#D4887F] transition-all duration-200"
+            {/* Text + nav */}
+            <motion.div
+              className="flex-1 text-left"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+            >
+              <span className="inline-block px-4 py-1.5 rounded-full text-xs font-semibold tracking-widest uppercase bg-[#E8A4A0]/20 text-[#D4887F] mb-5">
+                What We Offer
+              </span>
+              <h1 className="font-heading text-5xl md:text-6xl font-semibold text-[#1E293B] mb-5 leading-tight">
+                Our Care Services
+              </h1>
+              <p className="text-[#1E293B]/60 text-lg md:text-xl leading-relaxed mb-10">
+                Every person is different. We offer a full range of home care services — from a few hours of support
+                a week to round-the-clock live-in care — all tailored to what your loved one actually needs.
+              </p>
+
+              {/* Jump nav */}
+              <motion.div
+                initial={{ opacity: 0, y: 16 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                className="flex flex-wrap gap-3"
               >
-                {s.title}
-              </a>
-            ))}
-          </motion.div>
+                {services.map((s) => (
+                  <a
+                    key={s.id}
+                    href={`#${s.id}`}
+                    className="px-4 py-2 rounded-full text-xs font-semibold border-2 border-[#E8A4A0]/50 text-[#1E293B]/70
+                      hover:border-[#D4887F] hover:text-[#D4887F] transition-all duration-200"
+                  >
+                    {s.title}
+                  </a>
+                ))}
+              </motion.div>
+            </motion.div>
+
+            {/* Video */}
+            <motion.div
+              className="w-full lg:w-[480px] shrink-0"
+              initial={{ opacity: 0, x: 30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.7, delay: 0.15 }}
+            >
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-[#E8A4A0]/20">
+                <video
+                  src="/videos/hero-care.mp4"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  className="w-full h-full object-cover"
+                  aria-hidden="true"
+                />
+              </div>
+            </motion.div>
+
+          </div>
         </div>
       </section>
 
