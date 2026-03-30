@@ -73,7 +73,7 @@ export default function WhyChooseUs() {
 
             {/* Stats row */}
             <motion.div
-              className="mt-12 grid grid-cols-3 gap-6 border-t border-gray-100 pt-8"
+              className="mt-12 flex items-center justify-start gap-10 border-t border-gray-100 pt-8"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
