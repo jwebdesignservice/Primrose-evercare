@@ -285,8 +285,8 @@ export default function ServicesPage() {
                 Our Care Services
               </h1>
               <p className="text-[#1E293B]/60 text-lg md:text-xl leading-relaxed mb-10">
-                Every person is different. We offer a full range of home care services — from a few hours of support
-                a week to round-the-clock live-in care — all tailored to what your loved one actually needs.
+                Every person is different. We offer a full range of home care services, from a few hours of support
+                a week to round-the-clock live-in care, all tailored to what your loved one actually needs.
               </p>
 
               {/* Jump nav */}

@@ -31,6 +31,8 @@ const serviceLinks = [
   'Dementia Care',
   'Companionship',
   'Medication Support',
+  'Respite Care',
+  'Live-in Care',
 ];
 
 const bottomLinks = [
@@ -164,7 +166,7 @@ export default function Footer() {
         {/* Divider */}
         <div className="border-t border-white/10 pt-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-white/40">
-            <p>© 2025 Primrose Ever Care. All rights reserved.</p>
+            <p>© 2026 Primrose Ever Care. All rights reserved.</p>
             <div className="flex flex-wrap justify-center md:justify-end gap-4">
               {bottomLinks.map((link) => (
                 <Link
