@@ -153,9 +153,9 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Primrose Ever Care on Facebook"
-                className="w-9 h-9 rounded-full bg-white/10 hover:bg-[#4A7FA5]/40 flex items-center justify-center transition-colors duration-200"
+                className="w-9 h-9 rounded-full bg-white/10 hover:bg-[#E8A4A0]/30 flex items-center justify-center transition-colors duration-200"
               >
-                <FacebookIcon className="w-4 h-4 text-[#4A7FA5]" />
+                <FacebookIcon className="w-4 h-4 text-[#E8A4A0]" />
               </a>
             </div>
           </div>

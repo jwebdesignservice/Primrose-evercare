@@ -185,9 +185,9 @@ export default function ContactForm() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Primrose Ever Care on Facebook"
-                    className="w-10 h-10 rounded-xl bg-[#EBF4FB] hover:bg-[#4A7FA5]/20 flex items-center justify-center transition-colors duration-200"
+                    className="w-10 h-10 rounded-xl bg-[#FEF3F2] hover:bg-[#E8A4A0]/30 flex items-center justify-center transition-colors duration-200"
                   >
-                    <FacebookIcon className="w-5 h-5 text-[#4A7FA5]" />
+                    <FacebookIcon className="w-5 h-5 text-[#D4887F]" />
                   </a>
                 </div>
               </div>
