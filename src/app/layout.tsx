@@ -23,14 +23,14 @@ export const metadata: Metadata = {
     template: "%s | Primrose Ever Care",
   },
   description:
-    "Compassionate domiciliary home care across North Kent , Dartford, Gravesend, Medway, Maidstone and Swale.",
+    "Primrose Ever Care provides compassionate, person-centred home care services across North Kent. Personal care, dementia support, companionship and more in Dartford, Gravesend, Medway, Maidstone and Swale. Contact us for a free care assessment.",
   openGraph: {
     type: "website",
     locale: "en_GB",
     siteName: "Primrose Ever Care",
     title: "Primrose Ever Care | Home Care Services in Kent",
     description:
-      "Compassionate domiciliary home care across North Kent , Dartford, Gravesend, Medway, Maidstone and Swale.",
+      "Primrose Ever Care provides compassionate, person-centred home care services across North Kent. Personal care, dementia support, companionship and more in Dartford, Gravesend, Medway, Maidstone and Swale. Contact us for a free care assessment.",
     images: [
       {
         url: "/images/hero.jpg",
