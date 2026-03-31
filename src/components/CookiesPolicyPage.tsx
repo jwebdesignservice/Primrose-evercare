@@ -93,7 +93,7 @@ export default function CookiesPolicyPage() {
               <h3 className="font-heading text-xl font-semibold text-[#1E293B] mb-3">2. Analytics Cookies</h3>
               <p>
                 With your consent, we may use analytics cookies to understand how visitors interact
-                with our website — for example, which pages are visited most often and whether users
+                with our website, for example, which pages are visited most often and whether users
                 encounter any errors. This helps us improve our website and your experience.
               </p>
               <p className="mt-3">
@@ -124,7 +124,7 @@ export default function CookiesPolicyPage() {
               <h2 className="font-heading text-2xl font-semibold text-[#1E293B] mb-3">Managing Your Cookie Preferences</h2>
               <p>
                 You can manage or withdraw your consent at any time by clicking the button below.
-                You can also configure your browser to block or delete cookies — please refer to your
+                You can also configure your browser to block or delete cookies. Please refer to your
                 browser&apos;s help documentation for instructions.
               </p>
               <p className="mt-3">

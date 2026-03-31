@@ -77,7 +77,7 @@ const services = [
     bg: 'bg-[#EEF5EE]',
     accent: '#7B9E7B',
     description:
-      'Loneliness and social isolation can have a serious impact on mental and physical health. Our companionship service provides warm, consistent visits from a friendly face — someone to talk to, laugh with, and enjoy time alongside.',
+      'Loneliness and social isolation can have a serious impact on mental and physical health. Our companionship service provides warm, consistent visits from a friendly face, someone to talk to, laugh with, and enjoy time alongside.',
     benefits: [
       'Reduces loneliness and social isolation',
       'Improves mood and mental wellbeing',
@@ -127,7 +127,7 @@ const services = [
     bg: 'bg-[#FEF6EE]',
     accent: '#C0863A',
     description:
-      'Good nutrition is the foundation of good health. Our carers prepare fresh, balanced meals that meet individual dietary requirements and personal tastes — making mealtimes something to look forward to.',
+      'Good nutrition is the foundation of good health. Our carers prepare fresh, balanced meals that meet individual dietary requirements and personal tastes, making mealtimes something to look forward to.',
     benefits: [
       'Ensures regular, nutritious meals are eaten',
       'Supports weight management and hydration',
@@ -202,12 +202,12 @@ const services = [
     bg: 'bg-[#FEF3F2]',
     accent: '#D4887F',
     description:
-      'Caring for a loved one is one of the most rewarding things you can do — but it can also be exhausting. Our respite care service steps in to give family carers the time and space they need to rest and recharge, safe in the knowledge that their loved one is in good hands.',
+      'Caring for a loved one is one of the most rewarding things you can do, but it can also be exhausting. Our respite care service steps in to give family carers the time and space they need to rest and recharge, safe in the knowledge that their loved one is in good hands.',
     benefits: [
       'Prevents carer burnout and exhaustion',
       'Maintains the quality of family care long-term',
       'Gives family carers time for their own health',
-      'Flexible — from a few hours to several days',
+      'Flexible, from a few hours to several days',
     ],
     included: [
       'Full care coverage during your absence',

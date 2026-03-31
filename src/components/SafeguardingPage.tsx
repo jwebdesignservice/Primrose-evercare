@@ -143,7 +143,7 @@ export default function SafeguardingPage() {
               unexplained financial transactions, or poor living conditions.
             </p>
             <p>
-              Any concern — however small — will be taken seriously and documented.
+              Any concern, however small, will be taken seriously and documented.
             </p>
           </Section>
 
@@ -246,8 +246,8 @@ export default function SafeguardingPage() {
             <ul className="list-disc list-inside space-y-1 pl-2">
               <li>Complete safeguarding adults training before working unsupervised with clients</li>
               <li>Refresh safeguarding training annually</li>
-              <li>Report any concern immediately — never ignore a suspicion</li>
-              <li>Not investigate allegations themselves — this is the role of the statutory agencies</li>
+              <li>Report any concern immediately and never ignore a suspicion</li>
+              <li>Not investigate allegations themselves (this is the role of the statutory agencies)</li>
               <li>Maintain accurate, contemporaneous records of any concerns observed</li>
             </ul>
           </Section>

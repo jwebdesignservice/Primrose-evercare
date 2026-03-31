@@ -94,7 +94,7 @@ export default function AreasWeCoverPage() {
               Areas We Cover
             </h1>
             <p className="text-[#1E293B]/60 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
-              We provide home care services across North Kent — from Dartford in the west to
+              We provide home care services across North Kent, from Dartford in the west to
               Swale in the east. If you&apos;re not sure whether we cover your area, just give us a call.
             </p>
           </motion.div>
@@ -132,7 +132,7 @@ export default function AreasWeCoverPage() {
             className="rounded-2xl overflow-hidden shadow-lg border border-[#E8A4A0]/20 w-full h-[460px]"
           >
             <iframe
-              title="Primrose Ever Care Service Area — North Kent"
+              title="Primrose Ever Care Service Area, North Kent"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126720!2d0.5600!3d51.3700!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8d8c5e0b0a5a5%3A0x1a2b3c4d5e6f7g8h!2sNorth%20Kent%2C%20UK!5e0!3m2!1sen!2suk!4v1710000000001!5m2!1sen!2suk"
               width="100%"
               height="100%"
@@ -216,7 +216,7 @@ export default function AreasWeCoverPage() {
                 The Benefits of<br />Local Care
               </h2>
               <p className="text-[#1E293B]/60 text-base leading-relaxed mb-6">
-                Choosing a truly local care provider makes a real difference — not just for logistics,
+                Choosing a truly local care provider makes a real difference, not just for logistics,
                 but for the quality and consistency of the care your loved one receives.
               </p>
               <ul className="space-y-3">
@@ -241,8 +241,8 @@ export default function AreasWeCoverPage() {
                 Not sure if we cover your area?
               </h3>
               <p className="text-[#1E293B]/60 text-sm leading-relaxed mb-6">
-                Our coverage map is growing. Even if your town isn&apos;t listed, please get in touch —
-                we may still be able to help, or refer you to a trusted local provider.
+                Our coverage map is growing. Even if your town isn&apos;t listed, please get in touch.
+                We may still be able to help, or refer you to a trusted local provider.
               </p>
               <div className="flex flex-col gap-3">
                 <a

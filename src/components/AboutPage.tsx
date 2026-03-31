@@ -40,7 +40,7 @@ const values = [
     icon: Heart,
     title: 'Compassion',
     description:
-      'We treat every person in our care with genuine warmth and kindness. Care is not just a job to us — it is a calling.',
+      'We treat every person in our care with genuine warmth and kindness. Care is not just a job to us, it is a calling.',
     color: 'text-[#D4887F]',
     bg: 'bg-[#FEF3F2]',
   },
@@ -64,14 +64,14 @@ const values = [
     icon: Star,
     title: 'Excellence',
     description:
-      'We hold ourselves to the highest standards — from the quality of care we deliver to the way we communicate with families.',
+      'We hold ourselves to the highest standards, from the quality of care we deliver to the way we communicate with families.',
     color: 'text-[#9B7EC8]',
     bg: 'bg-[#F3EEF8]',
   },
 ];
 
 const commitments = [
-  'DBS checked carers — every member of our team',
+  'DBS checked carers, every member of our team',
   'Fully insured and operating to CQC standards',
   'Regular carer check-ins and quality reviews',
   'Open, honest communication with families at all times',
@@ -110,7 +110,7 @@ export default function AboutPage() {
             </h1>
             <p className="text-[#1E293B]/60 text-lg md:text-xl leading-relaxed">
               A family-founded home care provider built on compassion, integrity and an unwavering
-              commitment to helping people live well at home — in North Kent and beyond.
+              commitment to helping people live well at home, in North Kent and beyond.
             </p>
           </motion.div>
         </div>
@@ -133,7 +133,7 @@ export default function AboutPage() {
               <div className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-xl border border-[#E8A4A0]/20">
                 <Image
                   src="/images/about-lady.jpg"
-                  alt="Aminah Carew — Founder of Primrose Ever Care"
+                  alt="Aminah Carew, Founder of Primrose Ever Care"
                   fill
                   className="object-cover"
                 />
@@ -175,14 +175,14 @@ export default function AboutPage() {
                   everyone deserves to grow older with dignity, in the place they call home.
                 </p>
                 <p>
-                  Having seen first-hand the difference that truly compassionate, consistent care can make —
-                  and equally, the harm that poor care can cause — Aminah set out to create a service that
+                  Having seen first-hand the difference that truly compassionate, consistent care can make,
+                  and equally, the harm that poor care can cause, Aminah set out to create a service that
                   puts people genuinely first. Not on paper. In practice, every day.
                 </p>
                 <p>
-                  Based in North Kent, we serve communities across the region — from Dartford and Gravesend
+                  Based in North Kent, we serve communities across the region, from Dartford and Gravesend
                   to the Medway Towns, Maidstone and Swale. Every carer we work with shares our values,
-                  and every care plan we create is built around the individual — their routines, their
+                  and every care plan we create is built around the individual: their routines, their
                   preferences, their life.
                 </p>
                 <p>
@@ -286,8 +286,8 @@ export default function AboutPage() {
                 What You Can<br />Always Expect
               </h2>
               <p className="text-[#1E293B]/60 text-base leading-relaxed mb-8">
-                When you choose Primrose Ever Care, you are not just choosing a service —
-                you are choosing a team that takes your trust seriously. Here is what we commit to, every time.
+                When you choose Primrose Ever Care, you are not just choosing a service.
+                You are choosing a team that takes your trust seriously. Here is what we commit to, every time.
               </p>
               <ul className="space-y-4">
                 {commitments.map((item) => (

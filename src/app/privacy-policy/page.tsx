@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import PrivacyPolicyPage from '@/components/PrivacyPolicyPage';
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
         url: '/images/hero.jpg',
         width: 1200,
         height: 630,
-        alt: 'Primrose Ever Care — privacy policy',
+        alt: 'Primrose Ever Care , privacy policy',
       },
     ],
   },

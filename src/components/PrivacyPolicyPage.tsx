@@ -107,15 +107,15 @@ export default function PrivacyPolicyPage() {
           <Section title="4. Legal Basis for Processing">
             <p>We process your personal data on the following legal bases:</p>
             <ul className="list-disc list-inside space-y-1 pl-2">
-              <li><strong>Contract</strong> — to fulfil our service agreement with you</li>
-              <li><strong>Legal obligation</strong> — to comply with care regulations and safeguarding law</li>
-              <li><strong>Legitimate interests</strong> — to manage and improve our service</li>
-              <li><strong>Consent</strong> — where you have given explicit consent (e.g. marketing communications)</li>
-              <li><strong>Vital interests</strong> — to protect the health and safety of a service user</li>
+              <li><strong>Contract:</strong> to fulfil our service agreement with you</li>
+              <li><strong>Legal obligation:</strong> to comply with care regulations and safeguarding law</li>
+              <li><strong>Legitimate interests:</strong> to manage and improve our service</li>
+              <li><strong>Consent:</strong> where you have given explicit consent (e.g. marketing communications)</li>
+              <li><strong>Vital interests:</strong> to protect the health and safety of a service user</li>
             </ul>
             <p>
               Where we process special category data (such as health information), we rely on
-              Article 9(2)(h) of the UK GDPR — processing necessary for the provision of social care.
+              Article 9(2)(h) of the UK GDPR, processing necessary for the provision of social care.
             </p>
           </Section>
 
@@ -141,9 +141,9 @@ export default function PrivacyPolicyPage() {
               with our legal obligations. For care records, this is generally:
             </p>
             <ul className="list-disc list-inside space-y-1 pl-2">
-              <li>Adult care records — minimum 8 years after the last entry</li>
-              <li>Financial records — 7 years for tax purposes</li>
-              <li>Enquiry and contact data — up to 2 years if no service commenced</li>
+              <li>Adult care records: minimum 8 years after the last entry</li>
+              <li>Financial records: 7 years for tax purposes</li>
+              <li>Enquiry and contact data: up to 2 years if no service commenced</li>
             </ul>
             <p>After these periods, data is securely deleted or anonymised.</p>
           </Section>
@@ -151,13 +151,13 @@ export default function PrivacyPolicyPage() {
           <Section title="7. Your Rights">
             <p>Under UK GDPR, you have the right to:</p>
             <ul className="list-disc list-inside space-y-1 pl-2">
-              <li><strong>Access</strong> — request a copy of the personal data we hold about you</li>
-              <li><strong>Rectification</strong> — ask us to correct inaccurate information</li>
-              <li><strong>Erasure</strong> — request deletion of your data (subject to legal obligations)</li>
-              <li><strong>Restriction</strong> — ask us to limit how we use your data</li>
-              <li><strong>Portability</strong> — receive your data in a structured, machine-readable format</li>
-              <li><strong>Object</strong> — object to processing based on legitimate interests</li>
-              <li><strong>Withdraw consent</strong> — where processing is based on consent</li>
+              <li><strong>Access:</strong> request a copy of the personal data we hold about you</li>
+              <li><strong>Rectification:</strong> ask us to correct inaccurate information</li>
+              <li><strong>Erasure:</strong> request deletion of your data (subject to legal obligations)</li>
+              <li><strong>Restriction:</strong> ask us to limit how we use your data</li>
+              <li><strong>Portability:</strong> receive your data in a structured, machine-readable format</li>
+              <li><strong>Object:</strong> object to processing based on legitimate interests</li>
+              <li><strong>Withdraw consent:</strong> where processing is based on consent</li>
             </ul>
             <p>
               To exercise any of these rights, please contact us at{' '}

@@ -131,7 +131,7 @@ export default function ContactForm() {
                   className={`w-9 h-9 rounded-full flex items-center justify-center text-sm font-bold transition-all duration-300 ${
                     step >= s ? 'bg-gradient-to-r from-[#4A7FA5] to-[#5B8FB9] text-white shadow-md' : 'bg-white border-2 border-gray-200 text-[#1E293B]/40'
                   }`}
-                  aria-label={step > s ? `Step ${s} complete` : `Step ${s}${step === s ? ' — current' : ''}`}
+                  aria-label={step > s ? `Step ${s} complete` : `Step ${s}${step === s ? ', current' : ''}`}
                 >
                   {step > s ? <CheckCircle className="w-5 h-5" aria-hidden="true" /> : s}
                 </div>
@@ -235,7 +235,7 @@ export default function ContactForm() {
                       className="p-6 sm:p-8 space-y-7"
                     >
                       <div className="pb-3 border-b border-[#E8A4A0]/20">
-                        <h3 className="font-heading text-xl font-semibold text-[#1E293B]">Step 1 of 2 — About You</h3>
+                        <h3 className="font-heading text-xl font-semibold text-[#1E293B]">Step 1 of 2: About You</h3>
                         <p className="text-sm text-[#1E293B]/50 mt-0.5">Tell us who you are and who needs care</p>
                       </div>
 
@@ -286,7 +286,7 @@ export default function ContactForm() {
                               <option>Maidstone</option>
                               <option>Sittingbourne</option>
                               <option>Isle of Sheppey</option>
-                              <option>Outside these areas — please advise</option>
+                              <option>Outside these areas, please advise</option>
                             </select>
                           </Field>
                         </div>
@@ -329,7 +329,7 @@ export default function ContactForm() {
                       className="p-6 sm:p-8 space-y-7"
                     >
                       <div className="pb-3 border-b border-[#E8A4A0]/20">
-                        <h3 className="font-heading text-xl font-semibold text-[#1E293B]">Step 2 of 2 — Care Requirements</h3>
+                        <h3 className="font-heading text-xl font-semibold text-[#1E293B]">Step 2 of 2: Care Requirements</h3>
                         <p className="text-sm text-[#1E293B]/50 mt-0.5">Help us understand what support is needed</p>
                       </div>
 
@@ -342,8 +342,8 @@ export default function ContactForm() {
                             <option>Companionship Visits</option>
                             <option>Medication Support</option>
 
-                            <option>Multiple services — please discuss</option>
-                            <option>Not sure — need guidance</option>
+                            <option>Multiple services, please discuss</option>
+                            <option>Not sure, need guidance</option>
                           </select>
                         </Field>
 
@@ -356,14 +356,14 @@ export default function ContactForm() {
                               <option>Three or more times a day</option>
                               <option>A few times a week</option>
 
-                              <option>Flexible — not yet sure</option>
+                              <option>Flexible, not yet sure</option>
                             </select>
                           </Field>
                           <Field label="How Urgent Is This?">
                             <select name="urgency" value={form.urgency} onChange={handleChange} className={selectClass}>
                               <option value="">Please select...</option>
-                              <option>Urgent — needs care immediately</option>
-                              <option>Soon — within days</option>
+                              <option>Urgent, needs care immediately</option>
+                              <option>Soon, within days</option>
                               <option>Planning ahead</option>
                               <option>Just making enquiries</option>
                             </select>
@@ -444,7 +444,7 @@ export default function ContactForm() {
           </div>
           <div className="rounded-2xl overflow-hidden shadow-md border border-[#E8A4A0]/15 w-full h-[320px] sm:h-[420px]">
             <iframe
-              title="Primrose Ever Care Service Area — North Kent"
+              title="Primrose Ever Care Service Area, North Kent"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126720!2d0.5600!3d51.3700!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8d8c5e0b0a5a5%3A0x1a2b3c4d5e6f7g8h!2sNorth%20Kent%2C%20UK!5e0!3m2!1sen!2suk!4v1710000000001!5m2!1sen!2suk"
               width="100%" height="100%" style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"
             />

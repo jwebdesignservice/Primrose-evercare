@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Cormorant_Garamond, Inter } from "next/font/google";
 import "./globals.css";
 import CookieBanner from "@/components/CookieBanner";
@@ -23,20 +23,20 @@ export const metadata: Metadata = {
     template: "%s | Primrose Ever Care",
   },
   description:
-    "Compassionate domiciliary home care across North Kent — Dartford, Gravesend, Medway, Maidstone and Swale.",
+    "Compassionate domiciliary home care across North Kent , Dartford, Gravesend, Medway, Maidstone and Swale.",
   openGraph: {
     type: "website",
     locale: "en_GB",
     siteName: "Primrose Ever Care",
     title: "Primrose Ever Care | Home Care Services in Kent",
     description:
-      "Compassionate domiciliary home care across North Kent — Dartford, Gravesend, Medway, Maidstone and Swale.",
+      "Compassionate domiciliary home care across North Kent , Dartford, Gravesend, Medway, Maidstone and Swale.",
     images: [
       {
         url: "/images/hero.jpg",
         width: 1200,
         height: 630,
-        alt: "Primrose Ever Care — compassionate home care in North Kent",
+        alt: "Primrose Ever Care , compassionate home care in North Kent",
       },
     ],
   },
