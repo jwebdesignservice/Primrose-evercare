@@ -17,31 +17,50 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://primrose-ever-care.vercel.app"),
+  metadataBase: new URL("https://www.primroseevercare.co.uk"),
   title: {
     default: "Primrose Ever Care | Home Care Services in Kent",
     template: "%s | Primrose Ever Care",
   },
   description:
-    "Primrose Ever Care provides compassionate, person-centred home care services across North Kent. Personal care, dementia support, companionship and more in Dartford, Gravesend, Medway, Maidstone and Swale. Contact us for a free care assessment.",
+    "Compassionate home care services across Kent. Personal care, dementia support, companionship and live-in care in Dartford, Gravesend, Medway, Maidstone and Swale. Book a free care assessment today.",
+  keywords: [
+    "home care Kent",
+    "domiciliary care Medway",
+    "personal care Dartford",
+    "dementia care Gravesend",
+    "live-in care Kent",
+    "companionship care Maidstone",
+    "home care services Swale",
+  ],
   openGraph: {
     type: "website",
     locale: "en_GB",
     siteName: "Primrose Ever Care",
     title: "Primrose Ever Care | Home Care Services in Kent",
     description:
-      "Primrose Ever Care provides compassionate, person-centred home care services across North Kent. Personal care, dementia support, companionship and more in Dartford, Gravesend, Medway, Maidstone and Swale. Contact us for a free care assessment.",
+      "Compassionate home care services across Kent. Personal care, dementia support, companionship and live-in care in Dartford, Gravesend, Medway, Maidstone and Swale. Book a free care assessment today.",
     images: [
       {
         url: "/images/hero.jpg",
         width: 1200,
         height: 630,
-        alt: "Primrose Ever Care , compassionate home care in North Kent",
+        alt: "Primrose Ever Care - compassionate home care in Kent",
       },
     ],
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Primrose Ever Care | Home Care Services in Kent",
+    description:
+      "Compassionate home care services across Kent. Personal care, dementia support, companionship and live-in care.",
+  },
   alternates: {
-    canonical: "https://primrose-ever-care.vercel.app",
+    canonical: "https://www.primroseevercare.co.uk",
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
@@ -51,9 +70,9 @@ const jsonLd = {
   name: "Primrose Ever Care",
   description:
     "Compassionate domiciliary home care services across Medway and North Kent, provided by Primrose Ever Care LTD.",
-  url: "https://primrose-ever-care.vercel.app",
-  logo: "https://primrose-ever-care.vercel.app/logo.png",
-  image: "https://primrose-ever-care.vercel.app/images/hero.jpg",
+  url: "https://www.primroseevercare.co.uk",
+  logo: "https://www.primroseevercare.co.uk/logo.png",
+  image: "https://www.primroseevercare.co.uk/images/hero.jpg",
   telephone: "",
   address: {
     "@type": "PostalAddress",

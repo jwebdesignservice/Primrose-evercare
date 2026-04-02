@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: 'https://primrose-ever-care.vercel.app/privacy-policy',
+    canonical: 'https://www.primroseevercare.co.uk/privacy-policy',
   },
 };
 

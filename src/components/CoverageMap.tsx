@@ -122,7 +122,6 @@ export default function CoverageMap({ height = '420px' }: { height?: string }) {
   return (
     <>
       {/* Leaflet CSS */}
-      {/* eslint-disable-next-line @next/next/no-css-tags */}
       <link
         rel="stylesheet"
         href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"

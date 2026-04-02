@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: 'Complaints Procedure | Primrose Ever Care',
     description:
       'Our formal complaints procedure , how to raise a concern or complaint about Primrose Ever Care services.',
-    url: 'https://primrose-ever-care.vercel.app/complaints',
+    url: 'https://www.primroseevercare.co.uk/complaints',
     images: [
       {
         url: '/images/hero.jpg',

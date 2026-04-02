@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: 'Safeguarding Policy | Primrose Ever Care',
     description:
       'Our safeguarding policy , protecting vulnerable adults in our care from abuse, neglect and harm.',
-    url: 'https://primrose-ever-care.vercel.app/safeguarding',
+    url: 'https://www.primroseevercare.co.uk/safeguarding',
     images: [
       {
         url: '/images/hero.jpg',

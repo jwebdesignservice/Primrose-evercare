@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Cookies Policy | Primrose Ever Care',
     description: 'Information about how Primrose Ever Care uses cookies on our website.',
-    url: 'https://primrose-ever-care.vercel.app/cookies-policy',
+    url: 'https://www.primroseevercare.co.uk/cookies-policy',
     images: [
       {
         url: '/images/hero.jpg',

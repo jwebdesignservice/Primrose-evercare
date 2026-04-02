@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: 'About Us | Primrose Ever Care',
     description:
       'Learn about Primrose Ever Care , a family-founded domiciliary care provider serving North Kent. Meet our founder Aminah Carew and discover our values.',
-    url: 'https://primrose-ever-care.vercel.app/about',
+    url: 'https://www.primroseevercare.co.uk/about',
     images: [
       {
         url: '/images/about-lady.jpg',

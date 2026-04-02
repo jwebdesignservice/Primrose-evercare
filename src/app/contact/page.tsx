@@ -8,8 +8,8 @@ export const metadata: Metadata = {
   description: 'Get in touch with Primrose Ever Care. Book a free care assessment or enquire about our home care services in Medway.',
   openGraph: {
     title: 'Contact Us | Primrose Ever Care',
-    description: 'Get in touch with Primrose Ever Care. Book a free care assessment or enquire about our home care services in Medway.',
-    url: 'https://primrose-ever-care.vercel.app/contact',
+    description: 'Get in touch with Primrose Ever Care. Book a free care assessment or enquire about our home care services in Kent.',
+    url: 'https://www.primroseevercare.co.uk/contact',
     images: [
       {
         url: '/images/hero.jpg',
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: 'https://primrose-ever-care.vercel.app/contact',
+    canonical: 'https://www.primroseevercare.co.uk/contact',
   },
 };
 

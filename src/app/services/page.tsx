@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: 'Our Services | Primrose Ever Care',
     description:
       'Discover our full range of home care services in Kent , from personal care and dementia support to meal preparation, respite care and more.',
-    url: 'https://primrose-ever-care.vercel.app/services',
+    url: 'https://www.primroseevercare.co.uk/services',
     images: [
       {
         url: '/images/care.jpg',

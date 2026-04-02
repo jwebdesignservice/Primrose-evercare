@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: 'https://primrose-ever-care.vercel.app/areas-we-cover',
+    canonical: 'https://www.primroseevercare.co.uk/areas-we-cover',
   },
 };
 
