@@ -159,8 +159,8 @@ export default function CookiesPolicyPage() {
               </p>
               <ul className="mt-3 space-y-1">
                 <li><strong>Email:</strong>{' '}
-                  <a href="mailto:enquires@primroseevercare.co.uk" className="text-[#4A7FA5] hover:text-[#D4887F] transition-colors">
-                    enquires@primroseevercare.co.uk
+                  <a href="mailto:enquiries@primroseevercare.co.uk" className="text-[#4A7FA5] hover:text-[#D4887F] transition-colors">
+                    enquiries@primroseevercare.co.uk
                   </a>
                 </li>
                 <li><strong>Phone:</strong>{' '}

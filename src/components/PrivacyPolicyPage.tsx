@@ -63,8 +63,8 @@ export default function PrivacyPolicyPage() {
             </p>
             <p>
               <strong>Contact:</strong>{' '}
-              <a href="mailto:enquires@primroseevercare.co.uk" className="text-[#4A7FA5] hover:text-[#D4887F] transition-colors">
-                enquires@primroseevercare.co.uk
+              <a href="mailto:enquiries@primroseevercare.co.uk" className="text-[#4A7FA5] hover:text-[#D4887F] transition-colors">
+                enquiries@primroseevercare.co.uk
               </a>{' '}
               | <a href="tel:07852559816" className="text-[#4A7FA5] hover:text-[#D4887F] transition-colors">07852 559816</a>
             </p>
@@ -161,8 +161,8 @@ export default function PrivacyPolicyPage() {
             </ul>
             <p>
               To exercise any of these rights, please contact us at{' '}
-              <a href="mailto:enquires@primroseevercare.co.uk" className="text-[#4A7FA5] hover:text-[#D4887F] transition-colors">
-                enquires@primroseevercare.co.uk
+              <a href="mailto:enquiries@primroseevercare.co.uk" className="text-[#4A7FA5] hover:text-[#D4887F] transition-colors">
+                enquiries@primroseevercare.co.uk
               </a>.
               We will respond within one month.
             </p>

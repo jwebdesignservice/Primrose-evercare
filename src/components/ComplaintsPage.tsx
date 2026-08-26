@@ -185,8 +185,8 @@ export default function ComplaintsPage() {
                 {
                   icon: Mail,
                   label: 'By Email',
-                  value: 'enquires@primroseevercare.co.uk',
-                  href: 'mailto:enquires@primroseevercare.co.uk',
+                  value: 'enquiries@primroseevercare.co.uk',
+                  href: 'mailto:enquiries@primroseevercare.co.uk',
                   color: 'text-[#4A7FA5]',
                   bg: 'bg-[#EBF4FB]',
                 },

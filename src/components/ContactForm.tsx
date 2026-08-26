@@ -161,7 +161,7 @@ export default function ContactForm() {
               <div className="space-y-5">
                 {[
                   { icon: Phone, bg: 'bg-[#FEF3F2]', color: 'text-[#D4887F]', label: 'Phone', content: <a href="tel:07852559816" className="text-[#1E293B] font-medium hover:text-[#D4887F] transition-colors">07852 559816</a> },
-                  { icon: Mail, bg: 'bg-[#EBF4FB]', color: 'text-[#4A7FA5]', label: 'Email', content: <a href="mailto:enquires@primroseevercare.co.uk" className="text-[#1E293B] font-medium hover:text-[#4A7FA5] transition-colors break-all text-sm">enquires@primroseevercare.co.uk</a> },
+                  { icon: Mail, bg: 'bg-[#EBF4FB]', color: 'text-[#4A7FA5]', label: 'Email', content: <a href="mailto:enquiries@primroseevercare.co.uk" className="text-[#1E293B] font-medium hover:text-[#4A7FA5] transition-colors break-all text-sm">enquiries@primroseevercare.co.uk</a> },
                   { icon: MapPin, bg: 'bg-[#EEF5EE]', color: 'text-[#7B9E7B]', label: 'Areas Covered', content: <p className="text-[#1E293B] font-medium text-sm leading-relaxed">Dartford, Gravesend, Medway,<br />Maidstone, Sittingbourne &amp; Isle of Sheppey</p> },
                   { icon: Clock, bg: 'bg-[#F3EEF8]', color: 'text-[#9B7EC8]', label: 'Response Time', content: <p className="text-[#1E293B] font-medium text-sm">Within 24 hours</p> },
                 ].map(({ icon: Icon, bg, color, label, content }) => (

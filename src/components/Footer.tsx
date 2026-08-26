@@ -132,11 +132,11 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="mailto:enquires@primroseevercare.co.uk"
+                  href="mailto:enquiries@primroseevercare.co.uk"
                   className="flex items-start gap-3 text-white/65 text-sm hover:text-[#E8A4A0] transition-colors duration-200 break-all"
                 >
                   <Mail className="w-4 h-4 text-[#E8A4A0] flex-shrink-0 mt-0.5" strokeWidth={1.8} />
-                  enquires@primroseevercare.co.uk
+                  enquiries@primroseevercare.co.uk
                 </a>
               </li>
               <li>
